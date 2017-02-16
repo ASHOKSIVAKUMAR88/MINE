@@ -46,7 +46,8 @@ c_json DM_json;
 typedef void (*onGet_ptr)(json_object*);
 typedef void (*onPut_ptr)(json_object*);
 typedef void (*onGet_ptr1)(c_json);
- 
+typedef void (*onPut_ptr1)(c_json);
+ typedef void (*onobserve_ptr1)(c_json);
 typedef struct RESOURCE
 {
 	char uri[30];
@@ -59,7 +60,7 @@ typedef struct RESOURCE
 typedef struct 
 {
 char name[30];
-Resource_list* handler;
+void* handler;
 }Resource_info;
 typedef struct NODE
 {
@@ -71,8 +72,13 @@ typedef void (*disc_ptr)(Resource_info*);
 
 int dm_init(int);
 void DM_Discovery(disc_ptr);
-c_json DM_get(Resource_info*,onGet_ptr);
-void DM_onGet(c_json rep_json);
+c_json DM_Get(Resource_info*,onGet_ptr1);
+void DM_onGet(c_json);
+
+void DM_Put(Resource_info*,c_json,onPut_ptr1);
+void DM_onPut(c_json);
+void DM_onobserve(c_json);
+void DM_observe(Resource_info*, onobserve_ptr1);  ///call_back = DM_onobserve
 //c_json DM_put(Resource_info,json_object *,onPut_ptr);
 
 
