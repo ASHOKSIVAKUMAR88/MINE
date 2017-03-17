@@ -1,0 +1,31 @@
+import os
+
+env = Environment()
+env.Append(IOTVITY_DIR ='../../iotivity-1.2.1')
+
+iotvity_dir = env.get('IOTVITY_DIR')
+
+env.AppendUnique(CXXFLAGS = ['-std=c++0x', '-Wall'])
+
+env.Program('simpleclient.cpp', CPPPATH = [iotvity_dir + '/resource/include/',
+		iotvity_dir + '/resource/csdk/stack/include',
+		iotvity_dir + '/resource/c_common/ocrandom/include',
+		iotvity_dir + '/resource/c_common/',
+      	  	iotvity_dir + '/resource/csdk/logger/include',
+        	iotvity_dir + '/resource/oc_logger/include',
+        	iotvity_dir + '/resource/examples',
+		'../../DM_IoTvity/'
+		],
+        LIBS = ['coap', 'connectivity_abstraction' , 'oc_logger' , 'octbstack' , 'oc' , 'DM_iotivity','-ljson','-lpthread'],
+        LIBPATH= [iotvity_dir + '/out/linux/x86_64/release', '../../Source/IoTvity_Wrapper/'])
+env.Program('simpleserver.cpp', CPPPATH = [iotvity_dir + '/resource/include/',
+		iotvity_dir + '/resource/csdk/stack/include',
+		iotvity_dir + '/resource/c_common/ocrandom/include',
+		iotvity_dir + '/resource/c_common/',
+      	  	iotvity_dir + '/resource/csdk/logger/include',
+        	iotvity_dir + '/resource/oc_logger/include',
+        	iotvity_dir + '/resource/examples',
+		'../../DM_IoTvity/'
+		],
+        LIBS = ['coap', 'connectivity_abstraction' , 'oc_logger' , 'octbstack' , 'oc' , 'DM_iotivity','-ljson','-lpthread'],
+        LIBPATH= [iotvity_dir + '/out/linux/x86_64/release', '../../Source/IoTvity_Wrapper/'])
