@@ -1,0 +1,14 @@
+CALEOnInterfaceProxyPropertiesChanged===entering
+CALEOnInterfaceProxyPropertiesChanged===entering
+CALEOnInterfaceProxyPropertiesChanged===entering
+CALEOnInterfaceProxyPropertiesChanged===entering
+18:01.582 ERROR: BLE_CLIENT: Server side OIC GATT Service has no characteristics
+18:01.586 WARNING: BLE_CLIENT: Possible duplicate OIC GATT request characteristic proxy detected.
+18:01.726 ERROR: BLE_CLIENT: Failed to enable GATT notifications: GDBus.Error:org.bluez.Error.Failed: Operation failed with ATT error: 0x01
+18:01.726 ERROR: BLE_CLIENT: Characteristic set up for GATT service at 00:18:96:01:D9:55 failed.
+CALEOnInterfaceProxyPropertiesChanged===entering
+CALEOnInterfaceProxyPropertiesChanged===entering
+CALEOnInterfaceProxyPropertiesChanged===entering
+18:09.474 DEBUG: BLE_INTERFACE: org.bluez.Adapter1 properties Changed on /org/bluez/hci0:
+
+

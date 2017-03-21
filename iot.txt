@@ -1,0 +1,1 @@
+printf("Address:%s is already connected/n",g_variant_print(g_dbus_proxy_get_cached_property(device,"Address"),TRUE));
