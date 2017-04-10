@@ -1,0 +1,492 @@
+--------------------------------------------------------------------
+Usage : simpleclient <ObserveType> <TransportType>
+   ObserveType : 1 - Observe
+   ObserveType : 2 - ObserveAll
+   TransportType : 1 - IP
+   TransportType : 2 - TCP
+---------------------------------------------------------------------
+
+<===Setting ObserveType to Observe and ConnectivityType to IP===>
+
+41:51.470 INFO: OIC_RI_STACK: RegisterPersistentStorageHandler !!
+41:51.470 DEBUG: OIC_SRM: SRMRegisterPersistentStorageHandler !!
+41:51.470 INFO: OIC_RI_STACK: Entering OCInit
+41:51.470 DEBUG: OIC_CA_CONN_MGR: IoTivity version is v1.2.1
+41:51.470 DEBUG: OIC_CA_CONN_MGR: CAInitialize
+41:51.470 DEBUG: OIC_CA_INF_CTR: Set Receiver handle callback
+41:51.470 DEBUG: OIC_CA_INF_CTR: Set error handle callback
+41:51.470 DEBUG: UTHREADPOOL: IN
+41:51.470 DEBUG: UTHREADPOOL: OUT
+41:51.470 DEBUG: OIC_CA_QING: thread initialize..
+41:51.470 DEBUG: UTHREADPOOL: IN
+41:51.470 DEBUG: UTHREADPOOL: OUT
+41:51.470 DEBUG: OIC_CA_QING: thread initialize..
+41:51.470 DEBUG: OIC_CA_RETRANS: thread initialize
+41:51.470 DEBUG: UTHREADPOOL: IN
+41:51.470 DEBUG: OIC_CA_QING: message handler main thread start..
+41:51.470 DEBUG: UTHREADPOOL: OUT
+41:51.470 DEBUG: OIC_CA_INF_CTR: initialize adapters..
+41:51.470 DEBUG: OIC_CA_LE_ADAP: IN
+41:51.470 DEBUG: OIC_CA_LE_ADAP: IN - CAInitLEAdapterMutex
+41:51.470 DEBUG: OIC_CA_LE_ADAP: OUT
+41:51.470 DEBUG: OIC_CA_LE_ADAP: IN
+41:51.470 DEBUG: OIC_CA_LE_ADAP: OUT
+41:51.470 DEBUG: OIC_CA_RETRANS: retransmission main thread start
+41:51.470 DEBUG: OIC_CA_RETRANS: wait..there is no retransmission data.
+41:51.470 DEBUG: OIC_CA_QING: wait..
+41:51.470 DEBUG: OIC_CA_LE_ADAP: IN
+41:51.470 DEBUG: OIC_CA_LE_ADAP: OUT
+41:51.470 DEBUG: OIC_CA_LE_ADAP: IN
+41:51.470 ERROR: OIC_CA_LE_ADAP: CASetLENWConnectionStateChangedCb failed!
+41:51.470 DEBUG: OIC_CA_LE_ADAP: OUT
+41:51.470 DEBUG: OIC_CA_INF_CTR: 2 type adapter, register complete!
+41:51.470 DEBUG: OIC_CA_LE_ADAP: OUT
+41:51.470 DEBUG: OIC_CA_CONN_MGR: Selected network : 1
+41:51.470 DEBUG: OIC_CA_NW_CONFIG: Create network list
+41:51.470 DEBUG: OIC_CA_NW_CONFIG: Add network type(IP) - Not Supported
+41:51.470 DEBUG: OIC_CA_CONN_MGR: CAAddNetworkType(CA_IP_ADAPTER) function returns result: 12
+41:51.470 DEBUG: OIC_CA_CONN_MGR: Selected network : 4
+41:51.470 DEBUG: OIC_CA_NW_CONFIG: Add network type(EDR) - Not Supported
+41:51.470 DEBUG: OIC_CA_CONN_MGR: CAAddNetworkType(CA_RFCOMM_ADAPTER) function returns result : 12
+41:51.470 DEBUG: OIC_CA_CONN_MGR: Selected network : 2
+41:51.470 DEBUG: OIC_CA_NW_CONFIG: Add network type(LE)
+41:51.470 DEBUG: OIC_CA_INF_CTR: Start the adapter of CAConnectivityType[2]
+41:51.470 DEBUG: OIC_CA_LE_ADAP: CAStartLE
+41:51.470 DEBUG: BLE_INTERFACE: CAStartLEAdapter
+41:51.470 DEBUG: UTHREADPOOL: IN
+41:51.470 DEBUG: UTHREADPOOL: OUT
+41:51.478 DEBUG: OIC_CA_CONN_MGR: CAAddNetworkType(CA_GATT_ADAPTER) function returns result : 0
+41:51.478 DEBUG: OIC_CA_CONN_MGR: Selected network : 32
+41:51.478 DEBUG: OIC_CA_NW_CONFIG: Add network type(NFC) - Not Supported
+41:51.478 DEBUG: OIC_CA_CONN_MGR: CAAddNetworkType(CA_ADAPTER_NFC) function returns result : 12
+41:51.478 DEBUG: OIC_CA_COMMON_UTILS: CARegisterNetworkMonitorHandler
+41:51.478 DEBUG: OIC_CA_INF_CTR: Set network monitoring callback
+41:51.478 DEBUG: OIC_CA_INF_CTR: Add NetworkStateChanged Callback
+41:51.478 DEBUG: OIC_SRM: SRMRegisterHandler !!
+41:51.478 DEBUG: OIC_CA_CONN_MGR: CARegisterHandler
+41:51.478 DEBUG: OIC_CA_CONN_MGR: CAStartListeningServer
+41:51.478 DEBUG: OIC_CA_LE_ADAP: IN - CAStartLEListeningServer
+41:51.478 DEBUG: OIC_CA_LE_ADAP: IN
+41:51.478 DEBUG: OIC_CA_LE_ADAP: IN - CAInitLEServerSenderQueue
+41:51.478 DEBUG: OIC_CA_QING: thread initialize..
+41:51.478 DEBUG: OIC_CA_LE_ADAP: OUT
+41:51.478 DEBUG: OIC_CA_LE_ADAP: IN - CAInitLEReceiverQueue
+41:51.478 DEBUG: OIC_CA_QING: thread initialize..
+41:51.478 DEBUG: UTHREADPOOL: IN
+41:51.478 DEBUG: UTHREADPOOL: OUT
+41:51.478 DEBUG: OIC_CA_LE_ADAP: OUT
+41:51.478 DEBUG: OIC_CA_LE_ADAP: OUT
+41:51.478 DEBUG: OIC_CA_LE_ADAP: Before CAStartLEGattServer
+41:51.478 DEBUG: UTHREADPOOL: IN
+41:51.478 DEBUG: OIC_CA_QING: message handler main thread start..
+41:51.478 DEBUG: OIC_CA_QING: wait..
+41:51.478 DEBUG: UTHREADPOOL: OUT
+41:51.478 DEBUG: BLE_PERIPHERAL: Name "org.iotivity.gatt.service" acquired on D-Bus.
+41:53.478 ERROR: BLE_PERIPHERAL: LE advertisment registration failed for all Bluetooth adapters.
+41:53.478 DEBUG: UTHREADPOOL: IN
+41:53.478 DEBUG: UTHREADPOOL: OUT
+41:53.478 DEBUG: OIC_CA_LE_ADAP: OUT
+41:53.478 DEBUG: OIC_CA_CONN_MGR: CAStartDiscoveryServer
+41:53.478 DEBUG: OIC_CA_LE_ADAP: IN - CAStartLEDiscoveryServer
+41:53.478 DEBUG: OIC_CA_LE_ADAP: IN
+41:53.478 DEBUG: OIC_CA_LE_ADAP: IN - CAInitLEClientSenderQueue
+41:53.478 DEBUG: OIC_CA_QING: thread initialize..
+41:53.478 DEBUG: OIC_CA_QING: message handler main thread start..
+41:53.478 DEBUG: OIC_CA_QING: wait..
+41:53.478 DEBUG: OIC_CA_LE_ADAP: OUT - CAInitLEClientSenderQueue
+41:53.478 DEBUG: OIC_CA_LE_ADAP: IN - CAInitLEReceiverQueue
+41:53.478 DEBUG: OIC_CA_LE_ADAP: Already queue is initialized!
+41:53.478 DEBUG: OIC_CA_LE_ADAP: OUT
+41:53.478 DEBUG: OIC_CA_LE_ADAP: Before CAStartLEGattClient
+42:04.081 DEBUG: BLE_INTERFACE: org.bluez.Adapter1 properties Changed on /org/bluez/hci0:
+
+42:04.081 DEBUG: BLE_INTERFACE:   Discovering -> true
+42:05.301 INFO: BLE_CLIENT: GATT services not yet discovered on LE peripheral: 00:18:96:01:D9:55
+
+42:05.301 DEBUG: UTHREADPOOL: IN
+42:05.301 DEBUG: UTHREADPOOL: OUT
+42:05.301 DEBUG: OIC_CA_LE_ADAP: OUT
+42:05.301 INFO: OIC_RI_STACK: Entering OCCreateResource
+42:05.301 INFO: OIC_RI_STACK: Added type oic.wk.ad to /oic/ad
+42:05.301 INFO: OIC_RI_STACK: Binding core.r interface to /oic/ad
+42:05.301 INFO: OIC_RI_STACK: Binding oic.if.baseline interface to /oic/ad
+42:05.301 DEBUG: OIC_CA_QING: message handler main thread start..
+42:05.301 DEBUG: OIC_CA_QING: wait..
+42:05.301 INFO: OIC_RI_STACK: SendPresenceNotification
+42:05.301 INFO: OIC_RI_OBSERVE: Entering SendObserverNotification
+42:05.301 INFO: OIC_RI_OBSERVE: Resource has no observers
+42:05.301 DEBUG: OIC_SRM_PSI: GetSecureVirtualDatabaseFromPS IN
+42:05.301 DEBUG: OIC_SRM_PSI: File Read Size: 466
+42:05.301 DEBUG: OIC_SRM_PSI: GetSecureVirtualDatabaseFromPS OUT
+42:05.301 DEBUG: OIC_SRM_DOXM: Initial Doxm Owned = 0
+42:05.301 INFO: OIC_RI_STACK: Entering OCCreateResource
+42:05.301 INFO: OIC_RI_STACK: Added type oic.r.doxm to /oic/sec/doxm
+42:05.301 INFO: OIC_RI_STACK: Binding oic.if.baseline interface to /oic/sec/doxm
+42:05.301 INFO: OIC_RI_STACK: SendPresenceNotification
+42:05.301 DEBUG: OIC_SRM_PSI: GetSecureVirtualDatabaseFromPS IN
+42:05.301 DEBUG: OIC_SRM_PSI: File Read Size: 466
+42:05.301 DEBUG: OIC_SRM_PSI: GetSecureVirtualDatabaseFromPS OUT
+42:05.301 DEBUG: OIC_SRM_PSTAT: ReadSVDataFromPS failed
+42:05.301 INFO: OIC_RI_STACK: Entering OCCreateResource
+42:05.301 INFO: OIC_RI_STACK: Added type oic.r.pstat to /oic/sec/pstat
+42:05.301 INFO: OIC_RI_STACK: Binding oic.if.baseline interface to /oic/sec/pstat
+42:05.301 INFO: OIC_RI_STACK: SendPresenceNotification
+42:05.301 DEBUG: OIC_SRM_PSI: GetSecureVirtualDatabaseFromPS IN
+42:05.301 DEBUG: OIC_SRM_PSI: File Read Size: 466
+42:05.301 DEBUG: OIC_SRM_PSI: GetSecureVirtualDatabaseFromPS OUT
+42:05.301 DEBUG: OIC_SRM_ACL: ReadSVDataFromPS failed
+42:05.301 INFO: OIC_RI_STACK: Entering OCCreateResource
+42:05.301 INFO: OIC_RI_STACK: Added type oic.r.acl to /oic/sec/acl
+42:05.301 INFO: OIC_RI_STACK: Binding oic.if.baseline interface to /oic/sec/acl
+42:05.301 INFO: OIC_RI_STACK: SendPresenceNotification
+42:05.301 DEBUG: OIC_SRM_PSI: GetSecureVirtualDatabaseFromPS IN
+42:05.301 DEBUG: OIC_SRM_PSI: File Read Size: 466
+42:05.301 DEBUG: OIC_SRM_PSI: GetSecureVirtualDatabaseFromPS OUT
+42:05.301 DEBUG: OIC_SRM_CREDL: ReadSVDataFromPS failed
+42:05.301 INFO: OIC_RI_STACK: Entering OCCreateResource
+42:05.301 INFO: OIC_RI_STACK: Added type oic.r.cred to /oic/sec/cred
+42:05.301 INFO: OIC_RI_STACK: Binding oic.if.baseline interface to /oic/sec/cred
+42:05.301 INFO: OIC_RI_STACK: SendPresenceNotification
+42:05.301 DEBUG: OIC_SRM_SVC: Begin InitSVCResource 
+42:05.301 DEBUG: OIC_SRM_PSI: GetSecureVirtualDatabaseFromPS IN
+42:05.301 DEBUG: OIC_SRM_PSI: File Read Size: 466
+42:05.301 DEBUG: OIC_SRM_PSI: GetSecureVirtualDatabaseFromPS OUT
+42:05.301 DEBUG: OIC_SRM_SVC: ReadSVDataFromPS failed
+42:05.301 INFO: OIC_RI_STACK: Entering OCCreateResource
+42:05.301 INFO: OIC_RI_STACK: Added type oic.r.svc to /oic/sec/svc
+42:05.301 INFO: OIC_RI_STACK: Binding oic.if.baseline interface to /oic/sec/svc
+42:05.301 INFO: OIC_RI_STACK: SendPresenceNotification
+42:05.301 DEBUG: OIC_SRM_SVC: InitSVCResource RetVal 0
+42:05.301 DEBUG: OIC_SRM_PSI: GetSecureVirtualDatabaseFromPS IN
+42:05.301 DEBUG: OIC_SRM_PSI: File Read Size: 466
+42:05.301 DEBUG: OIC_SRM_PSI: GetSecureVirtualDatabaseFromPS OUT
+42:05.301 DEBUG: OIC_SRM_AMACL: ReadSVDataFromPS failed
+42:05.301 INFO: OIC_RI_STACK: Entering OCCreateResource
+42:05.301 INFO: OIC_RI_STACK: Added type oic.r.amacl to /oic/sec/amacl
+42:05.301 INFO: OIC_RI_STACK: Binding oic.if.baseline interface to /oic/sec/amacl
+42:05.301 INFO: OIC_RI_STACK: SendPresenceNotification
+42:05.301 DEBUG: OIC_SRM_PSI: GetSecureVirtualDatabaseFromPS IN
+42:05.301 DEBUG: OIC_SRM_PSI: File Read Size: 466
+42:05.301 DEBUG: OIC_SRM_PSI: GetSecureVirtualDatabaseFromPS OUT
+42:05.301 DEBUG: OIC_SRM_PCONF: ReadSVDataFromPS failed
+42:05.301 DEBUG: OIC_SRM_PCONF: GetPconfDefault
+42:05.301 INFO: OIC_RI_STACK: Entering OCCreateResource
+42:05.301 INFO: OIC_RI_STACK: Added type oic.r.pconf to /oic/sec/pconf
+42:05.301 INFO: OIC_RI_STACK: Binding oic.if.baseline interface to /oic/sec/pconf
+42:05.301 INFO: OIC_RI_STACK: SendPresenceNotification
+42:05.301 INFO: OIC_RI_STACK: Entering OCCreateResource
+42:05.301 INFO: OIC_RI_STACK: Added type oic.r.dpairing to /oic/sec/dpairing
+42:05.301 INFO: OIC_RI_STACK: Binding oic.if.baseline interface to /oic/sec/dpairing
+42:05.301 INFO: OIC_RI_STACK: SendPresenceNotification
+42:05.301 INFO: OIC_RI_STACK: Entering OCCreateResource
+42:05.301 INFO: OIC_RI_STACK: Added type oic.r.ver to /oic/sec/ver
+42:05.301 INFO: OIC_RI_STACK: Binding oic.if.baseline interface to /oic/sec/ver
+42:05.301 INFO: OIC_RI_STACK: SendPresenceNotification
+42:05.301 DEBUG: OIC_SRM_PSI: CreateResetProfile IN
+42:05.301 DEBUG: OIC_SRM_PSI: GetSecureVirtualDatabaseFromPS IN
+42:05.301 DEBUG: OIC_SRM_PSI: File Read Size: 466
+42:05.301 DEBUG: OIC_SRM_PSI: GetSecureVirtualDatabaseFromPS OUT
+42:05.301 DEBUG: OIC_SRM_PSI: UpdateSecureResourceInPS IN
+42:05.301 DEBUG: OIC_SRM_PSI: GetSecureVirtualDatabaseFromPS IN
+42:05.301 DEBUG: OIC_SRM_PSI: File Read Size: 466
+42:05.301 DEBUG: OIC_SRM_PSI: GetSecureVirtualDatabaseFromPS OUT
+42:05.301 DEBUG: OIC_SRM_PSI: Writing in the file: 466
+42:05.301 DEBUG: OIC_SRM_PSI: Written 466 bytes into SVR database file
+42:05.305 DEBUG: OIC_SRM_PSI: UpdateSecureResourceInPS OUT
+42:05.305 DEBUG: OIC_SRM_PSI: CreateResetProfile OUT
+42:05.305 INFO: OIC_RI_STACK: Entering OCCreateResource
+42:05.305 INFO: OIC_RI_STACK: Added type oic.wk.d to /oic/d
+42:05.305 INFO: OIC_RI_STACK: Binding oic.if.baseline interface to /oic/d
+42:05.305 INFO: OIC_RI_STACK: SendPresenceNotification
+42:05.305 INFO: OIC_RI_STACK: Binding oic.if.r interface to /oic/d
+42:05.305 INFO: OIC_RI_STACK: Entering OCCreateResource
+42:05.305 INFO: OIC_RI_STACK: Added type oic.wk.p to /oic/p
+42:05.305 INFO: OIC_RI_STACK: Binding oic.if.baseline interface to /oic/p
+42:05.305 INFO: OIC_RI_STACK: SendPresenceNotification
+42:05.305 INFO: OIC_RI_STACK: Binding oic.if.r interface to /oic/p
+42:05.305 INFO: OIC_RI_STACK: Entering OCDoResource
+42:05.305 DEBUG: OIC_CA_CONN_MGR: CAGenerateToken
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: token len:8, token:
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: B8 C0 7C 5D 17 3F 38 25 
+42:05.305 INFO: OIC_RI_CLIENTCB: Adding client callback with token
+42:05.305 INFO: OIC_RI_CLIENTCB: B8 C0 7C 5D 17 3F 38 25 
+42:05.305 INFO: OIC_RI_CLIENTCB: Added Callback for uri : /oic/res
+42:05.305 DEBUG: OIC_RM_UTIL: IN
+42:05.305 DEBUG: OIC_RM_UTIL: IN
+42:05.305 ERROR: OIC_RM_UTIL: Invalid input:options
+42:05.305 INFO: OIC_RM_UTIL: Route option is not present
+42:05.305 DEBUG: OIC_RM_RAP: IN
+42:05.305 DEBUG: OIC_RM_RAP: createoption dlen 0 slen [0]
+42:05.305 DEBUG: OIC_RM_RAP: Source and destination is not present
+42:05.305 DEBUG: OIC_RM_RAP: OptValue NOR Message Type
+42:05.305 INFO: OIC_RM_RAP: Option Length is 1
+42:05.305 DEBUG: OIC_RM_RAP: OUT
+42:05.305 DEBUG: OIC_RM_UTIL: OUT
+42:05.305 DEBUG: OIC_CA_CONN_MGR: CASendRequest
+42:05.305 DEBUG: OIC_CA_CONN_MGR: CASendMessageMultipleAdapter
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: CAPrepareSendData IN
+42:05.305 DEBUG: UQUEUE: Queue Count : 1
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: CAPrepareSendData IN
+42:05.305 DEBUG: OIC_CA_QING: wake up..
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: Multicast message
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: requestInfo is available..
+42:05.305 DEBUG: UQUEUE: Queue Count : 1
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: generate pdu for [1]adapter, [98]flags
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: uri : /oic/res
+Finding Resource... 
+42:05.305 INFO: OIC_RI_STACK: Entering OCDoResource
+42:05.305 DEBUG: OIC_CA_CONN_MGR: CAGenerateToken
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: token len:8, token:
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: 60 2E 09 7B CF 60 D2 0D 
+42:05.305 INFO: OIC_RI_CLIENTCB: Adding client callback with token
+42:05.305 INFO: OIC_RI_CLIENTCB: 60 2E 09 7B CF 60 D2 0D 
+42:05.305 INFO: OIC_RI_CLIENTCB: Added Callback for uri : /oic/res
+42:05.305 DEBUG: OIC_RM_UTIL: IN
+42:05.305 DEBUG: OIC_RM_UTIL: IN
+42:05.305 ERROR: OIC_RM_UTIL: Invalid input:options
+42:05.305 INFO: OIC_RM_UTIL: Route option is not present
+42:05.305 DEBUG: OIC_RM_RAP: IN
+42:05.305 DEBUG: OIC_RM_RAP: createoption dlen 0 slen [0]
+42:05.305 DEBUG: OIC_RM_RAP: Source and destination is not present
+42:05.305 DEBUG: OIC_RM_RAP: OptValue NOR Message Type
+42:05.305 INFO: OIC_RM_RAP: Option Length is 1
+42:05.305 DEBUG: OIC_RM_RAP: OUT
+42:05.305 DEBUG: OIC_RM_UTIL: OUT
+42:05.305 DEBUG: OIC_CA_CONN_MGR: CASendRequest
+42:05.305 DEBUG: OIC_CA_CONN_MGR: CASendMessageMultipleAdapter
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: CAPrepareSendData IN
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: parse Head Opt: 1
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: Head opt ID: 65524
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: Head opt data: �
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: Head opt length: 1
+42:05.305 DEBUG: UQUEUE: Queue Count : 2
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: CAPrepareSendData IN
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: transport type: 0, payload size: 0
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: msgID is 0
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: gen msg id=5407
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: messageId in pdu is 5407, 5407
+42:05.305 DEBUG: UQUEUE: Queue Count : 3
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: token info token length: 8, token :
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: B8 C0 7C 5D 17 3F 38 25 
+Finding Resource for second time...42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [oic] opt will be added.
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [12] pdu length
+
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [res] opt will be added.
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [16] pdu length
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [<] opt will be added.
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [20] pdu length
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [�] opt will be added.
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [22] pdu length
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [26] pdu length after option
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: PDU Maker - token :
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: B8 C0 7C 5D 17 3F 38 25 
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: PDU Maker - payload :
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: 58 01 1F 15 B8 C0 7C 5D 17 3F 38 25 B3 6F 69 63 
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: 03 72 65 73 61 3C E1 FE D6 C0 
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: CADestroyData IN
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: CADestroyData OUT
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: Multicast message
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: requestInfo is available..
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: generate pdu for [2]adapter, [98]flags
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: uri : /oic/res
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: parse Head Opt: 1
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: Head opt ID: 65524
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: Head opt data: �
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: Head opt length: 1
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: curOptNumber[11], prevOptNumber[11], optValueLen[3], optLength[4], msgLength[4]
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: curOptNumber[11], prevOptNumber[11], optValueLen[3], optLength[4], msgLength[8]
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: curOptNumber[17], prevOptNumber[17], optValueLen[1], optLength[2], msgLength[10]
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: curOptNumber[65524], prevOptNumber[65524], optValueLen[1], optLength[4], msgLength[14]
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: transport type: 2, payload size: 0
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: token info token length: 8, token :
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: B8 C0 7C 5D 17 3F 38 25 
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [oic] opt will be added.
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [11] pdu length
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [res] opt will be added.
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [15] pdu length
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [<] opt will be added.
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [19] pdu length
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [�] opt will be added.
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [21] pdu length
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [25] pdu length after option
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: PDU Maker - token :
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: C0 7C 5D 17 3F 38 25 B3 
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: PDU Maker - payload :
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: D8 01 01 B8 C0 7C 5D 17 3F 38 25 B3 6F 69 63 03 
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: 72 65 73 61 3C E1 FE D6 C0 
+42:05.305 DEBUG: OIC_CA_LE_ADAP: IN - CASendLEMulticastData
+42:05.305 DEBUG: OIC_CA_LE_ADAP: g_adapterType: 2
+42:05.305 DEBUG: OIC_CA_LE_ADAP: IN
+42:05.305 DEBUG: OIC_CA_LE_ADAP: Data Sending to LE layer [25]
+42:05.305 ERROR: CA: parameter is null
+42:05.305 DEBUG: UQUEUE: Queue Count : 1
+42:05.305 DEBUG: OIC_CA_LE_ADAP: OUT
+42:05.305 DEBUG: OIC_CA_LE_ADAP: OUT - CASendLEMulticastData
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: CADestroyData IN
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: CADestroyData OUT
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: Multicast message
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: requestInfo is available..
+42:05.305 DEBUG: OIC_CA_QING: wake up..
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: generate pdu for [1]adapter, [98]flags
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: uri : /oic/res
+42:05.305 DEBUG: OIC_CA_LE_ADAP: IN - CALEClientSendDataThread
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: parse Head Opt: 1
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: Head opt ID: 65524
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: Head opt data: �
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: Head opt length: 1
+42:05.305 DEBUG: OIC_CA_FRAG: IN, dataLength = 25
+42:05.305 DEBUG: OIC_CA_FRAG: OUT
+42:05.305 DEBUG: OIC_CA_LE_ADAP: Packet info: data size[25] midPacketCount[0] remainingLen[11] totalLength[33]
+42:05.305 DEBUG: OIC_CA_FRAG: IN
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: transport type: 0, payload size: 0
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: msgID is 0
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: gen msg id=34040
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: messageId in pdu is 34040, 34040
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: token info token length: 8, token :
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: 60 2E 09 7B CF 60 D2 0D 
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [oic] opt will be added.
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [12] pdu length
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [res] opt will be added.
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [16] pdu length
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [<] opt will be added.
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [20] pdu length
+42:05.305 DEBUG: OIC_CA_FRAG: IN
+42:05.305 DEBUG: OIC_CA_FRAG: OUT
+42:05.305 DEBUG: OIC_CA_LE_ADAP: Sending Multicast Data
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [�] opt will be added.
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [22] pdu length
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [26] pdu length after option
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: PDU Maker - token :
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: 60 2E 09 7B CF 60 D2 0D 
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: PDU Maker - payload :
+42:05.305 ERROR: OIC_CA_LE_ADAP: Update characteristics (all) failed, result [255]
+42:05.305 DEBUG: OIC_CA_LE_ADAP: CALEErrorHandler IN
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: 58 01 F8 84 60 2E 09 7B CF 60 D2 0D B3 6F 69 63 
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: 03 72 65 73 61 3C E1 FE D6 C0 
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: CADestroyData IN
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: CADestroyData OUT
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: Multicast message
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: requestInfo is available..
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: generate pdu for [2]adapter, [98]flags
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: uri : /oic/res
+42:05.305 DEBUG: OIC_CA_INF_CTR: received error from adapter in interfacecontroller
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: CAErrorHandler IN
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: parse Head Opt: 1
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: Head opt ID: 65524
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: Head opt data: �
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: pdu parse-transport type : 2
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: Head opt length: 1
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: curOptNumber[11], prevOptNumber[11], optValueLen[3], optLength[4], msgLength[4]
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: curOptNumber[11], prevOptNumber[11], optValueLen[3], optLength[4], msgLength[8]
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: curOptNumber[17], prevOptNumber[17], optValueLen[1], optLength[2], msgLength[10]
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: curOptNumber[65524], prevOptNumber[65524], optValueLen[1], optLength[4], msgLength[14]
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: transport type: 2, payload size: 0
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: token info token length: 8, token :
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: pdu parse ret: 1
+42:05.305 INFO: OIC_CA_PRTCL_MSG: there is no version info in coap header
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: 60 2E 09 7B CF 60 D2 0D 
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [oic] opt will be added.
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [11] pdu length
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [res] opt will be added.
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [15] pdu length
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: CAGenerateHandlerData IN
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: address : 
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [<] opt will be added.
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [19] pdu length
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [�] opt will be added.
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: COAP URI element : oic
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: COAP URI element : res
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: COAP URI element : <
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [21] pdu length
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: [25] pdu length after option
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: PDU Maker - token :
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: option[17] has an unsupported format [60]
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: COAP URI element : �
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: 2E 09 7B CF 60 D2 0D B3 
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: PDU Maker - payload :
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: inside token length : 8
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: D8 01 01 60 2E 09 7B CF 60 D2 0D B3 6F 69 63 03 
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: 72 65 73 61 3C E1 FE D6 C0 
+42:05.305 DEBUG: OIC_CA_LE_ADAP: IN - CASendLEMulticastData
+42:05.305 DEBUG: OIC_CA_LE_ADAP: g_adapterType: 2
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: URL length:8
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: error Info :
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: optionID: 65524
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: list: �
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: token:
+42:05.305 DEBUG: OIC_CA_LE_ADAP: IN
+42:05.305 DEBUG: OIC_CA_LE_ADAP: Data Sending to LE layer [25]
+42:05.305 ERROR: CA: parameter is null
+42:05.305 DEBUG: UQUEUE: Queue Count : 1
+42:05.305 DEBUG: OIC_CA_LE_ADAP: OUT
+42:05.305 DEBUG: OIC_CA_LE_ADAP: OUT - CASendLEMulticastData
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: CADestroyData IN
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: CADestroyData OUT
+42:05.305 DEBUG: OIC_CA_QING: wait..
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: B8 C0 7C 5D 17 3F 38 25 
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: msgID: 0
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: CAGenerateHandlerData OUT
+42:05.305 DEBUG: UQUEUE: Queue Count : 1
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: CAErrorHandler OUT
+42:05.305 DEBUG: OIC_CA_LE_ADAP: CALEErrorHandler OUT
+42:05.305 DEBUG: OIC_CA_LE_ADAP: IN - CALEClientSendDataThread
+42:05.305 DEBUG: OIC_CA_FRAG: IN, dataLength = 25
+42:05.305 DEBUG: OIC_CA_FRAG: OUT
+42:05.305 DEBUG: OIC_CA_LE_ADAP: Packet info: data size[25] midPacketCount[0] remainingLen[11] totalLength[33]
+42:05.305 DEBUG: OIC_CA_FRAG: IN
+42:05.305 DEBUG: OIC_CA_FRAG: IN
+42:05.305 DEBUG: OIC_CA_FRAG: OUT
+42:05.305 DEBUG: OIC_CA_LE_ADAP: Sending Multicast Data
+42:05.305 ERROR: OIC_CA_LE_ADAP: Update characteristics (all) failed, result [255]
+42:05.305 DEBUG: OIC_CA_LE_ADAP: CALEErrorHandler IN
+42:05.305 DEBUG: OIC_CA_INF_CTR: received error from adapter in interfacecontroller
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: CAErrorHandler IN
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: pdu parse-transport type : 2
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: pdu parse ret: 1
+42:05.305 INFO: OIC_CA_PRTCL_MSG: there is no version info in coap header
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: CAGenerateHandlerData IN
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: address : 
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: COAP URI element : oic
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: COAP URI element : res
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: COAP URI element : <
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: option[17] has an unsupported format [60]
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: COAP URI element : �
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: inside token length : 8
+42:05.305 DEBUG: OIC_CA_PRTCL_MSG: URL length:8
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: error Info :
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: optionID: 65524
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: list: �
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: token:
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: 60 2E 09 7B CF 60 D2 0D 
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: msgID: 0
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: CAGenerateHandlerData OUT
+42:05.305 DEBUG: UQUEUE: Queue Count : 2
+42:05.305 DEBUG: OIC_CA_MSG_HANDLE: CAErrorHandler OUT
+42:05.305 DEBUG: OIC_CA_LE_ADAP: CALEErrorHandler OUT
+42:05.305 DEBUG: OIC_CA_QING: wait..
+42:05.313 DEBUG: OIC_CA_MSG_HANDLE: error callback error: 255
+42:05.313 INFO: OIC_RI_STACK: Enter HandleCAErrorResponse
+42:05.313 INFO: OIC_RI_CLIENTCB: Looking for token
+42:05.313 INFO: OIC_RI_CLIENTCB: B8 C0 7C 5D 17 3F 38 25 
+42:05.313 INFO: OIC_RI_CLIENTCB: Found in callback list
+0: listenCallback(): failed to create resource. clientResponse: 255
+42:05.313 INFO: OIC_RI_OBSERVE: Looking for token
+42:05.313 INFO: OIC_RI_OBSERVE: B8 C0 7C 5D 17 3F 38 25 
+42:05.313 INFO: OIC_RI_OBSERVE: Observer node not found!!
+42:05.313 INFO: OIC_RI_STACK: Exit HandleCAErrorResponse
+42:05.313 DEBUG: OIC_CA_MSG_HANDLE: CADestroyData IN
+42:05.313 DEBUG: OIC_CA_MSG_HANDLE: CADestroyData OUT
+42:05.325 DEBUG: OIC_CA_MSG_HANDLE: error callback error: 255
+42:05.325 INFO: OIC_RI_STACK: Enter HandleCAErrorResponse
+42:05.325 INFO: OIC_RI_CLIENTCB: Looking for token
+42:05.325 INFO: OIC_RI_CLIENTCB: 60 2E 09 7B CF 60 D2 0D 
+42:05.325 INFO: OIC_RI_CLIENTCB: Found in callback list
+0: listenCallback(): failed to create resource. clientResponse: 255
+42:05.325 INFO: OIC_RI_OBSERVE: Looking for token
+42:05.325 INFO: OIC_RI_OBSERVE: 60 2E 09 7B CF 60 D2 0D 
+42:05.325 INFO: OIC_RI_OBSERVE: Observer node not found!!
+42:05.325 INFO: OIC_RI_STACK: Exit HandleCAErrorResponse
+42:05.325 DEBUG: OIC_CA_MSG_HANDLE: CADestroyData IN
+42:05.325 DEBUG: OIC_CA_MSG_HANDLE: CADestroyData OUT
+
+

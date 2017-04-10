@@ -1,0 +1,5 @@
+http://cslibrary.stanford.edu/101/EssentialC.pdf
+http://cslibrary.stanford.edu/102/PointersAndMemory.pdf
+http://cslibrary.stanford.edu/103/LinkedListBasics.pdf
+http://cslibrary.stanford.edu/104/
+http://cslibrary.stanford.edu/105/LinkedListProblems.pdf

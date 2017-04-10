@@ -1,0 +1,62 @@
+Adapter  : objectpath '/org/bluez/hci0' 
+Address  : '00:1A:7D:DA:71:13' 
+Alias  : 'VTLW044L' 
+Appearance  : uint16 260 
+Blocked  : false 
+Connected  : false 
+LegacyPairing  : false 
+Name  : 'VTLW044L' 
+Paired  : false 
+Trusted  : false 
+UUIDs  : ['00001800-0000-1000-8000-00805f9b34fb', '00001801-0000-1000-8000-00805f9b34fb', 'ade3d529-c784-4f63-a987-eb69f70ee816'] 
+
+ *proxy_list = g_list_prepend(*proxy_list, proxy);
+***********************************
+
+
+main observation 
+
+remove all paired bluetooth devices from the list of paired devices in the desktop before running 
+our vitaDM
+************************************
+Destination(topic):   ASHOK/Scan_Status
+
+ Command for init:
+
+{"Cmd":"VITA_DM_Init","DeviceID":"B8:27:EB:39:1A:2F","DM_SL":{"SubModule : CM":{},"SubModule : DsM":{"BT_Params":["Name","DeviceID","Class_Name"],"WIFI_Params":["Name","DeviceID","Signal","Frequency"]},"SubModule : DeM":{},"RUN_IP":"192.168.4.19:8856"}}
+string : {"Cmd":"VITA_DM_Init","DeviceID":"B8:27:EB:39:1A:2F","DM_SL":{"SubModule : CM":{},"SubModule : DsM":{"BT_Params":["Name","DeviceID","Class_Name"],"WIFI_Params":["Name","DeviceID","Signal","Frequency"]},"SubModule : DeM":{},"RUN_IP":"192.168.4.19:8856"}}
+
+Command for discover:
+
+{"Cmd":"Discover","ScanType":"Manual","DeviceType":"iotdevice"}
+
+
+
+{"Cmd":"iotvity_Get","ScanType":"Manual","Handle":"0x7fb3a8000e50"};
+{"Cmd":"iotvity_Get","ScanType":"Manual","Handle":"0x7fac58000b90"};
+
+
+PUT :
+IR Temperature Data
+{"Cmd":"iotvity_Put","Data":{ "name": "John's light","power":20,"state":false},"Handle":"0x7fe388000ef0"};
+{"Cmd":"iotvity_Put","Data":{ "IR Temperature Data": 90},"Handle":"0x7fb3a8000e50"};
+
+Observe :
+{"Cmd":"iotvity_Observe","ScanType":"Manual","Handle":"0x7fd778000b90"};
+
+
+export LD_LIBRARY_PATH=VITA_DM/Executables/lib/:VITA_DM/DM_IoTvity/:VITA_DM/DM_IoTvity/iotivity-1.2.1/out/linux/x86_64/release
+
+sensor tag Mac Address:
+90:59:AF:0B:7F:D4
+
+
+/home/pujalash/ashok434/git/dm
+export LD_LIBRARY_PATH=VITA_DM/Executables/lib/:VITA_DM/DM_IoTvity/:VITA_DM/DM_IoTvity/iotivity-1.2.1/out/linux/x86_64/release
+
+export LD_LIBRARY_PATH=/home/pujalash/ashok434/git/dm/VITA/VITA_DM/DM_IoTvity:/home/pujalash/ashok434/git/dm/VITA/VITA_DM/Executables/lib:/home/pujalash/ashok434/git/dm/VITA/VITA_DM/DM_IoTvity/iotivity-1.2.1/out/linux/x86_64/release:/home/pujalash/ashok434/git/dm/VITA/VITA_DM/DM_IoTvity
+
+
+export LD_LIBRARY_PATH=home/lachaash/ganesh/VITA/VITA_DM/DM_IoTvity:/home/lachaash/ganesh/VITA/VITA_DM/Executables/lib:/home/lachaash/ganesh/VITA/VITA_DM/DM_IoTvity/iotivity-1.2.1/out/linux/x86_64/release:/home/lachaash/ganesh/VITA/VITA_DM/DM_IoTvity
+
+

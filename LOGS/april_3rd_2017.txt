@@ -1,0 +1,37 @@
+
+---------------------------------------------------------------------
+Usage : simpleclient <ObserveType> <TransportType>
+   ObserveType : 1 - Observe
+   ObserveType : 2 - ObserveAll
+   TransportType : 1 - IP
+   TransportType : 2 - TCP
+---------------------------------------------------------------------
+
+<===Setting ObserveType to Observe and ConnectivityType to IP===>
+
+btgatt-client: Opening L2CAP LE connection on ATT channel:
+	 src: 00:00:00:00:00:00
+	dest: 00:18:96:01:D9:55
+Connecting to device...Done
+VITA_WRITE_REQUEST ==>fd: 20 Length:5 
+write length 5
+Finding Resource... 
+in for loop  fd = 20
+
+VITA_WRITE_REQUEST ==>fd: 20 Length:23 
+write length 23
+in for loop  fd = 20
+
+VITA_WRITE_REQUEST ==>fd: 20 Length:16 
+write length 16
+
+
+
+Response oknResponse oknResponse oknPacket Up....
+Packet Up....
+Packet Up....
+
+Packet Up....
+	URI of the resource: /a/BLE_SERVER_DESKTOP
+
+

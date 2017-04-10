@@ -1,0 +1,8 @@
+client.c
+CAGattClientOnCharacteristicPropertiesChanged
+		return ;
+	statement at most
+
+ocserverrequest.c
+	GetServerRequestUsingHandle()
+		EXCLUDED

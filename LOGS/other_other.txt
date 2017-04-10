@@ -1,0 +1,16 @@
+SHA256:Jrd+3jQUfZX1kPuisahWIscXmqhQOrP9thh7MPeu+7k ASHASHISH<ashashishpoojala@gmail.com>
+
+ssh-keygen -t rsa -C "ASHASHISH<ashashishpoojala@gmail.com>SHA256:ai9GVHfLHIZhQSSZeiXl2kWPi4G9tvVX7Q1ipwpk5k0 ASHASHISH<ashashishpoojala@gmail.com>
+The key's randomart image is:
++---[RSA 2048]----+
+|        .*B+.    |
+|        =*+.+o   |
+|       o.++=oo.  |
+|      o .o =+.  .|
+|     . .S E = o o|
+|      .* + + = oo|
+|     .o o o . . +|
+|     .o. . .   . |
+|     . .. .      |
++----[SHA256]-----+
+

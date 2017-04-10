@@ -1,0 +1,38 @@
+22:16.935 WARNING: BLE_CLIENT: Possible duplicate OIC GATT request characteristic proxy detected.
+22:17.075 ERROR: BLE_CLIENT: Failed to enable GATT notifications: GDBus.Error:org.bluez.Error.Failed: Operation failed with ATT error: 0x01
+22:17.075 ERROR: BLE_CLIENT: Characteristic set up for GATT service at 00:1A:7D:DA:71:13 failed.
+
+
+
+
+
+55:52.031 DEBUG: OIC_CA_PRTCL_MSG: messageId in pdu is 53573, 53573
+55:52.031 DEBUG: OIC_CA_PRTCL_MSG: token info token length: 8, token :
+55:52.031 ERROR: UMUTEX: ca_mutex_lock Invalid mutex !
+55:52.031 ERROR: UMUTEX: ca_mutex_unlock: Invalid mutex !
+CAGattClientSendDataToAll============1==================
+55:52.031 ERROR: OIC_CA_LE_ADAP: Update characteristics (all) failed, result [255]
+55:52.031 DEBUG: OIC_CA_LE_ADAP: CALEErrorHandler IN
+
+        printf("CAGeneratePDUImpl============================\n\n\n");
+
+
+
+
+
+
+47:56.383 ERROR: BLE_CLIENT: Failed to enable GATT notifications: GDBus.Error:org.bluez.Error.Failed: Operation failed with ATT error: 0x01
+47:56.383 ERROR: BLE_CLIENT: Characteristic set up for GATT service at 00:1A:7D:DA:71:13 failed.
+
+
+
+
+
+
+
+
+CALEOnInterfaceProxyPropertiesChanged===entering
+CALEOnInterfaceProxyPropertiesChanged===entering
+55:52.027 ERROR: BLE_CENTRAL: org.bluez.Device1.Connect() call faile
+
+

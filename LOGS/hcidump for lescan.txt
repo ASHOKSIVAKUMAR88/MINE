@@ -1,0 +1,567 @@
+HCI sniffer - Bluetooth packet analyzer ver 5.37
+device: hci0 snap_len: 1500 filter: 0xffffffffffffffff
+< HCI Command: LE Set Scan Parameters (0x08|0x000b) plen 7
+    type 0x01 (active)
+    interval 10.000ms window 10.000ms
+    own address: 0x00 (Public) policy: All
+> HCI Event: Command Complete (0x0e) plen 4
+    LE Set Scan Parameters (0x08|0x000b) ncmd 1
+    status 0x00
+< HCI Command: LE Set Scan Enable (0x08|0x000c) plen 2
+    value 0x01 (scanning enabled)
+    filter duplicates 0x01 (enabled)
+> HCI Event: Command Complete (0x0e) plen 4
+    LE Set Scan Enable (0x08|0x000c) ncmd 1
+    status 0x00
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 58:E4:A5:C1:A1:DC (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -72
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 7B:00:EA:6E:F4:FB (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -81
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 58:E4:A5:C1:A1:DC (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -67
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 4E:E1:79:84:1D:62 (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -82
+> HCI Event: LE Meta Event (0x3e) plen 42
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Flags: 0x06
+      Unknown type 0xff with 25 bytes data
+      RSSI: -75
+> HCI Event: LE Meta Event (0x3e) plen 43
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Complete service classes: 0x81e7
+      Unknown type 0x16 with 25 bytes data
+      RSSI: -75
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 58:E4:A5:C1:A1:DC (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -73
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 4E:E1:79:84:1D:62 (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -81
+> HCI Event: LE Meta Event (0x3e) plen 42
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Flags: 0x06
+      Unknown type 0xff with 25 bytes data
+      RSSI: -75
+> HCI Event: LE Meta Event (0x3e) plen 43
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Complete service classes: 0x81e7
+      Unknown type 0x16 with 25 bytes data
+      RSSI: -75
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 58:E4:A5:C1:A1:DC (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -68
+> HCI Event: LE Meta Event (0x3e) plen 42
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Flags: 0x06
+      Unknown type 0xff with 25 bytes data
+      RSSI: -73
+> HCI Event: LE Meta Event (0x3e) plen 43
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Complete service classes: 0x81e7
+      Unknown type 0x16 with 25 bytes data
+      RSSI: -75
+> HCI Event: LE Meta Event (0x3e) plen 42
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Flags: 0x06
+      Unknown type 0xff with 25 bytes data
+      RSSI: -75
+> HCI Event: LE Meta Event (0x3e) plen 43
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Complete service classes: 0x81e7
+      Unknown type 0x16 with 25 bytes data
+      RSSI: -75
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 58:E4:A5:C1:A1:DC (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -74
+> HCI Event: LE Meta Event (0x3e) plen 42
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Flags: 0x06
+      Unknown type 0xff with 25 bytes data
+      RSSI: -75
+> HCI Event: LE Meta Event (0x3e) plen 43
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Complete service classes: 0x81e7
+      Unknown type 0x16 with 25 bytes data
+      RSSI: -74
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 58:E4:A5:C1:A1:DC (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -67
+> HCI Event: LE Meta Event (0x3e) plen 42
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Flags: 0x06
+      Unknown type 0xff with 25 bytes data
+      RSSI: -80
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 58:E4:A5:C1:A1:DC (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -74
+> HCI Event: LE Meta Event (0x3e) plen 42
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Flags: 0x06
+      Unknown type 0xff with 25 bytes data
+      RSSI: -81
+> HCI Event: LE Meta Event (0x3e) plen 43
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Complete service classes: 0x81e7
+      Unknown type 0x16 with 25 bytes data
+      RSSI: -81
+> HCI Event: LE Meta Event (0x3e) plen 42
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Flags: 0x06
+      Unknown type 0xff with 25 bytes data
+      RSSI: -80
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 58:E4:A5:C1:A1:DC (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -68
+> HCI Event: LE Meta Event (0x3e) plen 42
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Flags: 0x06
+      Unknown type 0xff with 25 bytes data
+      RSSI: -74
+> HCI Event: LE Meta Event (0x3e) plen 43
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Complete service classes: 0x81e7
+      Unknown type 0x16 with 25 bytes data
+      RSSI: -74
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 58:E4:A5:C1:A1:DC (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -73
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 4E:E1:79:84:1D:62 (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -83
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 58:E4:A5:C1:A1:DC (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -73
+> HCI Event: LE Meta Event (0x3e) plen 42
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Flags: 0x06
+      Unknown type 0xff with 25 bytes data
+      RSSI: -80
+> HCI Event: LE Meta Event (0x3e) plen 43
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Complete service classes: 0x81e7
+      Unknown type 0x16 with 25 bytes data
+      RSSI: -82
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 7B:00:EA:6E:F4:FB (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -80
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 4E:E1:79:84:1D:62 (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -84
+> HCI Event: LE Meta Event (0x3e) plen 42
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Flags: 0x06
+      Unknown type 0xff with 25 bytes data
+      RSSI: -81
+> HCI Event: LE Meta Event (0x3e) plen 42
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Flags: 0x06
+      Unknown type 0xff with 25 bytes data
+      RSSI: -74
+> HCI Event: LE Meta Event (0x3e) plen 43
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Complete service classes: 0x81e7
+      Unknown type 0x16 with 25 bytes data
+      RSSI: -74
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 58:E4:A5:C1:A1:DC (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -68
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 7B:00:EA:6E:F4:FB (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -79
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 7B:00:EA:6E:F4:FB (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -81
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 4E:E1:79:84:1D:62 (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -81
+> HCI Event: LE Meta Event (0x3e) plen 42
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Flags: 0x06
+      Unknown type 0xff with 25 bytes data
+      RSSI: -74
+> HCI Event: LE Meta Event (0x3e) plen 43
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Complete service classes: 0x81e7
+      Unknown type 0x16 with 25 bytes data
+      RSSI: -74
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 58:E4:A5:C1:A1:DC (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -75
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 7B:00:EA:6E:F4:FB (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -78
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 4E:E1:79:84:1D:62 (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -79
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 58:E4:A5:C1:A1:DC (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -69
+> HCI Event: LE Meta Event (0x3e) plen 42
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Flags: 0x06
+      Unknown type 0xff with 25 bytes data
+      RSSI: -74
+> HCI Event: LE Meta Event (0x3e) plen 43
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Complete service classes: 0x81e7
+      Unknown type 0x16 with 25 bytes data
+      RSSI: -74
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 58:E4:A5:C1:A1:DC (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -73
+> HCI Event: LE Meta Event (0x3e) plen 42
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Flags: 0x06
+      Unknown type 0xff with 25 bytes data
+      RSSI: -74
+> HCI Event: LE Meta Event (0x3e) plen 43
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Complete service classes: 0x81e7
+      Unknown type 0x16 with 25 bytes data
+      RSSI: -74
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 4E:E1:79:84:1D:62 (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -82
+> HCI Event: LE Meta Event (0x3e) plen 42
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Flags: 0x06
+      Unknown type 0xff with 25 bytes data
+      RSSI: -74
+> HCI Event: LE Meta Event (0x3e) plen 43
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Complete service classes: 0x81e7
+      Unknown type 0x16 with 25 bytes data
+      RSSI: -73
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 58:E4:A5:C1:A1:DC (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -69
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 58:E4:A5:C1:A1:DC (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -73
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 58:E4:A5:C1:A1:DC (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -74
+> HCI Event: LE Meta Event (0x3e) plen 42
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Flags: 0x06
+      Unknown type 0xff with 25 bytes data
+      RSSI: -83
+> HCI Event: LE Meta Event (0x3e) plen 43
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Complete service classes: 0x81e7
+      Unknown type 0x16 with 25 bytes data
+      RSSI: -82
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 7B:00:EA:6E:F4:FB (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -85
+> HCI Event: LE Meta Event (0x3e) plen 42
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Flags: 0x06
+      Unknown type 0xff with 25 bytes data
+      RSSI: -75
+> HCI Event: LE Meta Event (0x3e) plen 43
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Complete service classes: 0x81e7
+      Unknown type 0x16 with 25 bytes data
+      RSSI: -74
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 58:E4:A5:C1:A1:DC (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -67
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 7B:00:EA:6E:F4:FB (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -83
+> HCI Event: LE Meta Event (0x3e) plen 42
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Flags: 0x06
+      Unknown type 0xff with 25 bytes data
+      RSSI: -74
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 58:E4:A5:C1:A1:DC (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -72
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 7B:00:EA:6E:F4:FB (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -83
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 58:E4:A5:C1:A1:DC (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -76
+> HCI Event: LE Meta Event (0x3e) plen 42
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Flags: 0x06
+      Unknown type 0xff with 25 bytes data
+      RSSI: -75
+> HCI Event: LE Meta Event (0x3e) plen 43
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Complete service classes: 0x81e7
+      Unknown type 0x16 with 25 bytes data
+      RSSI: -74
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 4E:E1:79:84:1D:62 (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -83
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 58:E4:A5:C1:A1:DC (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -68
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 4E:E1:79:84:1D:62 (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -83
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 58:E4:A5:C1:A1:DC (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -77
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 7B:00:EA:6E:F4:FB (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -81
+> HCI Event: LE Meta Event (0x3e) plen 42
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Flags: 0x06
+      Unknown type 0xff with 25 bytes data
+      RSSI: -75
+> HCI Event: LE Meta Event (0x3e) plen 43
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Complete service classes: 0x81e7
+      Unknown type 0x16 with 25 bytes data
+      RSSI: -75
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 58:E4:A5:C1:A1:DC (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -68
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 58:E4:A5:C1:A1:DC (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -71
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 4E:E1:79:84:1D:62 (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -82
+> HCI Event: LE Meta Event (0x3e) plen 42
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 01:17:C5:50:C6:23 (Public)
+      Flags: 0x06
+      Unknown type 0xff with 25 bytes data
+      RSSI: -75
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 58:E4:A5:C1:A1:DC (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -68
+> HCI Event: LE Meta Event (0x3e) plen 39
+    LE Advertising Report
+      ADV_NONCONN_IND - Non connectable undirected advertising (3)
+      bdaddr 4E:E1:79:84:1D:62 (Random)
+      Unknown type 0xff with 25 bytes data
+      RSSI: -82
+< HCI Command: LE Set Scan Enable (0x08|0x000c) plen 2
+    value 0x00 (scanning disabled)
+    filter duplicates 0x01 (enabled)
+> HCI Event: Command Complete (0x0e) plen 4
+    LE Set Scan Enable (0x08|0x000c) ncmd 1
+    status 0x00
+
+
+

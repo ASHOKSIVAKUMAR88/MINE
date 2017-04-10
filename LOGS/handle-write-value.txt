@@ -1,0 +1,354 @@
+SIGNALS:
+Handle-read-value Procedure:
+
+CAStartLEListeningServer()-->
+CALEAdapterGattServerStart()-->
+CAStartLEGattServer()-->
+CAPeripheralStart()-->
+CAPeripheralStartEventLoop()-->
+CAPeripheralInitializeGattServices()-->
+CAGattServiceInitialize()-->
+CAGattRequestCharacteristicInitialize()-->
+CAGattRequestDescriptorInitialize()-->
+CAGattDescriptorInitialize()-->
+
+g_signal_connect(d->descriptor,
+                     "handle-read-value",
+                     G_CALLBACK(CAGattDescriptorReadValue),
+                     NULL);
+
+
+Handle-write-value Procedure:
+
+CAStartLEListeningServer()-->
+CALEAdapterGattServerStart()-->
+CAStartLEGattServer()-->
+CAPeripheralStart()-->
+CAPeripheralStartEventLoop()-->
+CAPeripheralInitializeGattServices()-->
+CAGattServiceInitialize()-->
+CAGattRequestCharacteristicInitialize()-->
+
+g_signal_connect(c->characteristic,
+                     "handle-write-value",
+                     G_CALLBACK(CAGattCharacteristicHandleWriteValue),
+                     c);
+
+
+CONNECT:
+
+CAStartLEDiscoveryServer()
+CALEAdapterGattClientStart()
+CAStartLEGattClient()
+CACentralConnectToAll()
+CACentralConnectToDevice()
+CACentralConnect()
+g_dbus_proxy_call_sync(device,
+                               "Connect",
+                               NULL,  // parameters
+                               G_DBUS_CALL_FLAGS_NONE,
+                               -1,    // timeout (default == -1),
+                               NULL,  // cancellable
+                               &error);
+
+
+
+
+
+
+
+
+
+
+CAStartLEDiscoveryServer()
+CAInitLEClientQueues()
+CAInitLEClientSenderQueue()
+CALEClientSendDataThread()
+CAUpdateCharacteristicsToAllGattServers()
+CAGattClientSendData()
+	GDBusProxy * const characteristic =
+            g_hash_table_lookup(g_context.characteristic_map,
+                                address));
+
+   		 if (characteristic == NULL)
+    			{
+       				 /*
+       			   		GATT request characteristic corresponding to given address
+        			  was not found.
+       					 */
+
+        				return result;
+   						 }
+
+
+
+CAGattClientSendDataToAll() ====================+>failure in iter value
+
+CAGattClientSendDataImpl()===================>multicast write value end
+
+
+CAGattClientSetupCharacteristics()======================> check for this initialisation atmost possible
+
+
+****************************************************NEW************************************************************
+CAStartLEDiscoveryServer()-->
+CALEAdapterGattClientStart()-->
+CAStartLEGattClient()-->
+CAGattClientInitialize()-->
+		GHashTable * const characteristic_map =
+       				 g_hash_table_new_full(	g_str_hash,
+                             			       	g_str_equal,
+                             			       	OICFree,
+	                             			g_object_unref);
+
+		CAGattClientSetupService(device,
+		                         characteristic_map,
+		                         address_map,
+		                         NULL,/////Service_prop
+		                         context);
+
+****************************************************NEW************************************************************
+CAStartLEDiscoveryServer()-->
+CAInitLEClientQueues()-->
+CAInitLEClientSenderQueue()-->
+CALEClientSendDataThread()-->
+CAUpdateCharacteristicsToAllGattServers()-->
+CAGattClientSendDataToAll()-->
+CAGattClientSendDataImpl()==>function where we stuck
+
+****************************************************NEW************************************************************
+
+
+1) CAGattClientInitialize () ==> CAGattClientSetupService()-->CAGattClientSetupCharacteristics=> CAGattClientMapInsert() ==> 
+2) CAGattClientOnDevicePropertiesChanged () ==> CAGattClientSetupService()-->CAGattClientSetupCharacteristics=> CAGattClientMapInsert() ==> 
+
+CAGattClientOnCharacteristicPropertiesChanged ==> this will be called when there is change in characteistic value changes on server
+
+CAGattClientOnCharacteristicPropertiesChanged
+CAGattClientOnDevicePropertiesChanged
+
+
+****************************************************NEW************************************************************
+
+BLUEZ TRACINIG THE ERROR 
+
+
+GDBUS_EXPERIMENTAL_ASYNC_METHOD("StartNotify", NULL, NULL,
+						characteristic_start_notify) },
+characteristic_start_notify()==>
+bt_gatt_client_register_notify()==>
+register_notify()==>
+enable_ccc_callback()==>
+	notify_data->callbackEx(att_ecode, notify_data->user_data)
+	notify_data_write_ccc()==>
+		bt_att_send()====sending attributes
+
+
+
+
+
+
+****************************************************NEW************************************************************
+Data transfer from client to server
+CALEClientSendDataThread()===>client initiates the transfer
+CALEDataReceiverHandler()====>server receives the packet from the client
+
+
+
+int index=0;
+    char *mydata=(char *)data;
+    printf("===================================%s\n",__func__);
+    printf("data length %d\n\n",dataLen);
+    for(index=0;index<dataLen;index++)
+        printf("%0.2x ",mydata[index]);
+    printf("\n\n\n\n");
+
+
+
+
+CAQueueingThreadBaseRoutine()==>
+			ca_cond_wait(thread->threadCond, thread->threadMutex);needs====>ca_cond_signal
+
+
+bt_att_send
+
+att-types.h
+http://gbrault.github.io/gattclient/att-types_8h_source.html
+
+
+
+****************************************************NEW************************************************************
+CA_SUPPORTED_BLE_MTU_SIZE 20
+GATT_CLIENT_CHARAC_CFG_NOTIF_BIT
+GATT_CHR_PROP_NOTIFY
+
+
+****************************************************NEW************************************************************
+CAGattResponseCharacteristicInitialize()====>notify bit set
+
+
+CAGattRequestCharacteristicInitialize
+
+bluez-5.37==>
+uint8_t value[2];
+put_le16(GATT_CLIENT_CHARAC_CFG_NOTIF_BIT, value);
+write_char(bas, attrib, handle, value, sizeof(value), ccc_written_cb,
+								user_data);
+
+
+
+****************************************************NEW************************************************************
+
+
+discover_descriptor_cb(uint8_t status, GSList *descs,
+								void *user_data)
+{
+	struct gatt_request *req = user_data;
+	struct bt_bas *bas = req->user_data;
+	struct gatt_desc *desc;
+read_char(bas, bas->attrib, desc->handle, ccc_read_cb, bas);
+
+static void ccc_read_cb(guint8 status, const guint8 *pdu, guint16 len,
+							gpointer user_data)
+
+write_ccc(bas, bas->attrib, bas->ccc_handle, bas);
+
+*******************************************NOTIFICATION BIT ANALYSING***************************
+
+notify_data_write_ccc()==>
+		if (notify_data->chrc->properties & BT_GATT_CHRC_PROP_NOTIFY)
+			{
+					pdu[2] = 0x01;
+			    printf("notify_data_write_ccc ==BT_GATT_CHRC_PROP_NOTIFY======\n\n");
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*******************************************bluez gatttool**********************************************
+
+
+interactive()======>
+******************************New**********************************
+libraries:
+
+attrib_gatttool_SOURCES = attrib/gatttool.c attrib/att.c attrib/gatt.c \
+				attrib/gattrib.c btio/btio.c \
+				attrib/gatttool.h attrib/interactive.c \
+				attrib/utils.c src/log.c client/display.c \
+				client/display.h
+
+attrib_gatttool_LDADD = lib/libbluetooth-internal.la \
+			src/libshared-glib.la -lglib-2.0 -lreadline
+		
+
+****************************March 28 2017************************
+CALEHandleInterfaceAdded==>
+		GDBusProxy * const proxy =
+        CAGetBlueZInterfaceProxy(parameters,
+                                 interface,
+                                 g_context.object_manager)===>
+					proxy =
+						    G_DBUS_PROXY(
+							g_dbus_object_manager_get_interface(object_manager,
+										            path,
+										            interface));
+
+
+CACentralConnectToDevice====>
+		GDBusProxy * const device = G_DBUS_PROXY(data)
+		CACentralConnect==>
+		GVariant * const ret =
+				g_dbus_proxy_call_sync(device,
+						       "Connect",
+						       NULL,  // paGET request was successful
+rameters
+						       G_DBUS_CALL_FLAGS_NONE,
+						       -1,    // timeout (default == -1),
+						       NULL,  // cancellable
+						       &error);
+
+
+
+
+CAQueueingThreadAddData()=========>add data elements to queue
+CALEAdapterClientReceivedData==>
+	CAGattClientOnCharacteristicPropertiesChanged()==============>peer which is important in address
+
+MY other work...
+"CAGattClientOnCharacteristicPropertiesChanged"
+
+
+****************************************March 30 2017************************
+CAGattClientInitialize()==>
+	CAGattClientInitialize==>
+		CAGattClientSetupService===>
+
+
+
+
+
+
+**************************************Multicast************************
+
+
+CAGattClientSendDataImpl()==>endpoint
+
+
+
+**************************************g_context with discovery implementation***********************
+
+
+CACentralStartDiscoveryImpl()===>discoveryfilter and start discovery
+
+
+********************************IOTIVITY issues********************************
+	#define CA_SUPPORTED_BLE_MTU_SIZE  128
+default is 20 modified to 128
+
+
+**********************Detecting Iotivity & Non-Iotivity device*****************
+
+
+static bool CALEDeviceFilter(GDBusProxy * device)
+{
+	GVariant * const prop =
+        g_dbus_proxy_get_cached_property(device, "UUIDs");
+    if (prop == NULL)
+    {
+        // No remote services available on the device.
+        return accepted;
+    }
+    gsize length = 0;
+    char const ** const UUIDs = g_variant_get_strv(prop, &length);
+    /*
+      It would have been nice to use g_strv_contains() here, but we
+      would need to run it twice: once for the uppercase form of the
+      UUID and once for for the lowercase form.  Just run the loop
+      manually, and use strcasecmp() instead.
+    */
+    char const * const * const end = UUIDs + length;
+    for (char const * const * u = UUIDs; u != end; ++u)
+    {
+        if (strcasecmp(*u, CA_GATT_SERVICE_UUID) == 0)
+        {
+            accepted = true;
+            break;
+        }
+    }
+}
+
+

@@ -1,0 +1,6 @@
+#! /bin/bash
+
+cd bluez-5.37/src
+sudo /etc/init.d/bluetooth stop
+sudo ./bluetoothd
+bluetootctl < file

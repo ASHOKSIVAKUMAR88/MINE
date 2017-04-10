@@ -1,0 +1,140 @@
+2015-07-13 09:16:43.980481 > HCI Event: LE Meta Event (0x3e) plen 19
+    LE Connection Complete
+      status 0x00 handle 64, role slave
+      bdaddr A4:5E:60:D6:AB:D6 (Public)
+2015-07-13 09:16:44.005820 > ACL data: handle 64 flags 0x02 dlen 7
+    ATT: MTU req (0x02)
+      client rx mtu 104
+2015-07-13 09:16:44.007363 < ACL data: handle 64 flags 0x00 dlen 7
+    ATT: MTU resp (0x03)
+      server rx mtu 104
+2015-07-13 09:16:44.039658 > ACL data: handle 64 flags 0x02 dlen 11
+    ATT: Read By Type req (0x08)
+      start 0x0001, end 0xffff
+      type-uuid 0x2a00
+2015-07-13 09:16:44.041919 < ACL data: handle 64 flags 0x00 dlen 17
+    : Read By Type resp (0x09)
+      length: 11
+        handle 0x0003, value 0x66 0x69 0x6c 0x6d 0x72 0x65 0x70 0x61 0x6b 
+2015-07-13 09:16:44.062170 > ACL data: handle 64 flags 0x02 dlen 11
+    ATT: Read By Group req (0x10)
+      start 0x0001, end 0xffff
+      type-uuid 0x2800
+2015-07-13 09:16:44.062771 > HCI Event: Number of Completed Packets (0x13) plen 5
+    handle 64 packets 2
+2015-07-13 09:16:44.064447 < ACL data: handle 64 flags 0x00 dlen 18
+    ATT: Read By Group resp (0x11)
+      attr handle 0x0001, end group handle 0x0005
+      value 0x00 0x18
+      attr handle 0x0006, end group handle 0x0009
+      value 0x01 0x18
+2015-07-13 09:16:44.084785 > ACL data: handle 64 flags 0x02 dlen 11
+    ATT: Read By Group req (0x10)
+      start 0x000a, end 0xffff
+      type-uuid 0x2800
+2015-07-13 09:16:44.087209 < ACL data: handle 64 flags 0x00 dlen 26
+    ATT: Read By Group resp (0x11)
+      attr handle 0x000a, end group handle 0x000c
+      value 0x79 0x5c 0x1e 0x63 0xf1 0xbe 0xfa 0x9d 0x72 0x4e 0x3a 0xad 0x21 0xc1 0x0a 0xd0
+2015-07-13 09:16:44.107196 > ACL data: handle 64 flags 0x02 dlen 11
+    ATT: Read By Group req (0x10)
+      start 0x000d, end 0xffff
+      type-uuid 0x2800
+2015-07-13 09:16:44.107551 > HCI Event: Number of Completed Packets (0x13) plen 5
+    handle 64 packets 2
+2015-07-13 09:16:44.109392 < ACL data: handle 64 flags 0x00 dlen 9
+    ATT: Error (0x01)
+      Error: Attribute not found (10)
+      Read By Group req (0x10) on handle 0x000d
+2015-07-13 09:16:44.140898 > ACL data: handle 64 flags 0x02 dlen 11
+    ATT: Read By Type req (0x08)
+      start 0x0001, end 0x0005
+      type-uuid 0x2803
+2015-07-13 09:16:44.143230 < ACL data: handle 64 flags 0x00 dlen 20
+    ATT: Read By Type resp (0x09)
+      length: 7
+        handle 0x0002, value 0x02 0x03 0x00 0x00 0x2a 
+        handle 0x0004, value 0x02 0x05 0x00 0x01 0x2a 
+2015-07-13 09:16:44.163688 > ACL data: handle 64 flags 0x02 dlen 11
+    ATT: Read By Type req (0x08)
+      start 0x0006, end 0x0009
+      type-uuid 0x2803
+2015-07-13 09:16:44.163718 > HCI Event: Number of Completed Packets (0x13) plen 5
+    handle 64 packets 2
+2015-07-13 09:16:44.166868 < ACL data: handle 64 flags 0x00 dlen 13
+    ATT: Read By Type resp (0x09)
+      length: 7
+        handle 0x0007, value 0x20 0x08 0x00 0x05 0x2a 
+2015-07-13 09:16:44.185955 > ACL data: handle 64 flags 0x02 dlen 11
+    ATT: Read By Type req (0x08)
+      start 0x000a, end 0x000c
+      type-uuid 0x2803
+2015-07-13 09:16:44.188005 < ACL data: handle 64 flags 0x00 dlen 27
+    ATT: Read By Type resp (0x09)
+      length: 21
+        handle 0x000b, value 0x0a 0x0c 0x00 0xd8 0x66 0x59 0xf3 0x65 0xcc 0xd9 0xa2 0xf5 0x4e 0x1c 0xdd 0xa5 0x21 0x43 0x24 
+2015-07-13 09:16:44.365960 > ACL data: handle 64 flags 0x02 dlen 9
+    ATT: Find Information req (0x04)
+      start 0x0009, end 0x0009
+2015-07-13 09:16:44.366260 > HCI Event: Number of Completed Packets (0x13) plen 5
+    handle 64 packets 2
+2015-07-13 09:16:44.368919 < ACL data: handle 64 flags 0x00 dlen 10
+    ATT: Find Information resp (0x05)
+      format: uuid-16
+        handle 0x0009, uuid 0x2902 (GATT(desc) Client Characteristic Configuration)
+2015-07-13 09:16:44.444961 > ACL data: handle 64 flags 0x02 dlen 27
+2015-07-13 09:16:44.445282 > ACL data: handle 64 flags 0x01 dlen 27
+2015-07-13 09:16:44.445946 > ACL data: handle 64 flags 0x01 dlen 27
+2015-07-13 09:16:44.478553 > ACL data: handle 64 flags 0x01 dlen 27
+    ATT: Prepare Write req (0x16)
+      attr handle 0x000c, value offset 0x0000
+      part attr value  0x22 0x31 0x32 0x33 0x34 0x35 0x36 0x37 0x38 0x39 0x2d 0x31 0x32 0x33 0x34 0x35 0x36 0x37 0x38 0x39 0x2d 0x31 0x32 0x33 0x34 0x35 0x36 0x37 0x38 0x39 0x2d 0x31 0x32 0x33 0x34 0x35 0x36 0x37 0x38 0x39 0x2d 0x31 0x32 0x33 0x34 0x35 0x36 0x37 0x38 0x39 0x2d 0x31 0x32 0x33 0x34 0x35 0x36 0x37 0x38 0x39 0x2d 0x31 0x32 0x33 0x34 0x35 0x36 0x37 0x38 0x39 0x2d 0x31 0x32 0x33 0x34 0x35 0x36 0x37 0x38 0x39 0x2d 0x31 0x32 0x33 0x34 0x35 0x36 0x37 0x38 0x39 0x2d 0x31 0x32 0x33 0x34 0x35 0x36 0x37 0x38
+2015-07-13 09:16:44.481603 < ACL data: handle 64 flags 0x00 dlen 9
+    ATT: Error (0x01)
+      Error: Request not supported (6)
+      Prepare Write req (0x16) on handle 0x0000
+2015-07-13 09:16:44.637492 > HCI Event: Number of Completed Packets (0x13) plen 5
+    handle 64 packets 1
+2015-07-13 09:16:44.770892 > ACL data: handle 64 flags 0x02 dlen 9
+    ATT: Write req (0x12)
+      handle 0x0009 value  0x02 0x00
+2015-07-13 09:16:44.773772 < ACL data: handle 64 flags 0x00 dlen 5
+    ATT: Write resp (0x13)
+2015-07-13 09:16:44.838099 > HCI Event: Number of Completed Packets (0x13) plen 5
+    handle 64 packets 2
+2015-07-13 09:16:47.584292 > HCI Event: Disconn Complete (0x05) plen 4
+    status 0x00 handle 64 reason 0x13
+    Reason: Remote User Terminated Connection
+2015-07-13 09:16:47.658098 < HCI Command: LE Set Advertise Enable (0x08|0x000a) plen 1
+2015-07-13 09:16:47.659001 > HCI Event: Command Complete (0x0e) plen 4
+    LE Set Advertise Enable (0x08|0x000a) ncmd 1
+    status 0x0c
+    Error: Command Disallowed
+2015-07-13 09:16:47.659915 < HCI Command: LE Set Scan Response Data (0x08|0x0009) plen 32
+2015-07-13 09:16:47.661301 > HCI Event: Command Complete (0x0e) plen 4
+    LE Set Scan Response Data (0x08|0x0009) ncmd 1
+    status 0x00
+2015-07-13 09:16:47.661928 < HCI Command: LE Set Advertising Data (0x08|0x0008) plen 32
+2015-07-13 09:16:47.663386 > HCI Event: Command Complete (0x0e) plen 4
+    LE Set Advertising Data (0x08|0x0008) ncmd 1
+    status 0x00
+2015-07-13 09:16:47.663579 < HCI Command: LE Set Advertising Parameters (0x08|0x0006) plen 15
+    min 100.000ms, max 100.000ms
+    type 0x00 (ADV_IND - Connectable undirected advertising) ownbdaddr 0x00 (Public)
+    directbdaddr 0x00 (Public) 00:00:00:00:00:00
+    channelmap 0x07 filterpolicy 0x00 (Allow scan from any, connection from any)
+2015-07-13 09:16:47.664310 > HCI Event: Command Complete (0x0e) plen 4
+    LE Set Advertising Parameters (0x08|0x0006) ncmd 1
+    status 0x00
+2015-07-13 09:16:47.664825 < HCI Command: LE Set Advertise Enable (0x08|0x000a) plen 1
+2015-07-13 09:16:47.665506 > HCI Event: Command Complete (0x0e) plen 4
+    LE Set Advertise Enable (0x08|0x000a) ncmd 1
+    status 0x00
+2015-07-13 09:16:47.665879 < HCI Command: LE Set Scan Response Data (0x08|0x0009) plen 32
+2015-07-13 09:16:47.666544 > HCI Event: Command Complete (0x0e) plen 4
+    LE Set Scan Response Data (0x08|0x0009) ncmd 1
+    status 0x00
+2015-07-13 09:16:47.666936 < HCI Command: LE Set Advertising Data (0x08|0x0008) plen 32
+2015-07-13 09:16:47.667612 > HCI Event: Command Complete (0x0e) plen 4
+    LE Set Advertising Data (0x08|0x0008) ncmd 1
+    status 0x00

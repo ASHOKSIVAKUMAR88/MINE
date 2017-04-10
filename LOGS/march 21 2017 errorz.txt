@@ -1,0 +1,38 @@
+48:27.339 DEBUG: OIC_CA_LE_ADAP: Sending Multicast Data
+48:27.339 ERROR: OIC_CA_LE_ADAP: Update characteristics (all) failed, result [255]
+
+
+
+
+48:27.335 DEBUG: OIC_CA_PRTCL_MSG: Head opt length: 1
+48:27.335 ERROR: OIC_CA_LE_ADAP: Update characteristics (all) failed, result [255]
+48:27.335 DEBUG: OIC_CA_LE_ADAP: CALEErrorHandler IN
+
+
+48:25.535 DEBUG: OIC_CA_LE_ADAP: Before CAStartLEGattClient
+48:27.335 INFO: BLE_CLIENT: GATT services not yet discovered on LE peripheral: 00:18:96:01:D9:55
+
+6:47.584 DEBUG: UQUEUE: Queue Count : 1
+16:47.584 DEBUG: OIC_CA_MSG_HANDLE: CAErrorHandler OUT
+16:47.584 DEBUG: OIC_CA_LE_ADAP: CALEErrorHandler OUT
+16:47.584 DEBUG: OIC_CA_LE_ADAP: IN - CALEClientSendDataThread
+16:47.584 DEBUG: OIC_CA_FRAG: IN, dataLength = 25
+16:47.584 DEBUG: OIC_CA_FRAG: OUT
+16:47.584 DEBUG: OIC_CA_LE_ADAP: Packet info: data size[25] midPacketCount[0] remainingLen[11] totalLength[33]
+16:47.584 DEBUG: OIC_CA_FRAG: IN
+16:47.584 DEBUG: OIC_CA_FRAG: IN
+16:47.584 DEBUG: OIC_CA_FRAG: OUT
+16:47.584 DEBUG: OIC_CA_LE_ADAP: Sending Multicast Data
+16:47.584 ERROR: UMUTEX: ca_mutex_lock Invalid mutex !
+16:47.584 ERROR: UMUTEX: ca_mutex_unlock: Invalid mutex !
+16:47.584 ERROR: OIC_CA_LE_ADAP: Update characteristics (all) failed, result [255]
+16:47.584 DEBUG: OIC_CA_LE_ADAP: CALEErrorHandler IN
+16:47.584 DEBUG: OIC_CA_INF_CTR: received error from adapter in interfacecontroller
+16:47.584 DEBUG: OIC_CA_MSG_HANDLE: CAErrorHandler IN
+16:47.584 DEBUG: OIC_CA_PRTCL_MSG: pdu parse-transport type : 2
+16:47.584 DEBUG: OIC_CA_PRTCL_MSG: pdu parse ret: 1
+16:47.584 INFO: OIC_CA_PRTCL_MSG: there is no version info in coap header
+16:47.584 DEBUG: OIC_CA_MSG_HANDLE: CAGenerateHandlerData IN
+16:47.584 DEBUG: OIC_CA_MSG_HANDLE: address : 
+16:47.584 DEBUG: OIC_CA_PRTCL_MSG: COAP URI element : oic
+
