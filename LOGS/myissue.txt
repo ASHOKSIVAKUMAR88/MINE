@@ -1,0 +1,22 @@
+Worked on bringing IOTivity BLE (by default)
+1.Default BLE in IOtivity is working upto Discovery only (March 12th 2017)
+
+2.Detects IOTivity BLE server devices only.(March 13th 2017)
+
+3.Modified IOTivity client to detect any BLE Devices.(March 13th 2017)
+
+4.Able to bring up Default BLE IOTivity by using sleep() before establishing connection for each one.(worked on it till 25th March 2017).
+
+5.Checked for the issues in the default IOTivity client and server (working or not) March 20th 2017 using Gatt tool
+
+6.Changed MTU size of client and server to increase the performance of client and server communication.
+
+7.Using socket descriptor, worked on ble to implement IOTivity ble communication b/w IOTivity server and client.(March 29th 2017)
+
+8.Created a separate thread for each connection for continuous read from the server.
+
+9.Enabled default notification (CCID) bit.
+
+10.Worked on maintaining client connection with the server when required.
+
+

@@ -1,0 +1,26 @@
+void VITA_WRITE_REQUEST(uint32_t file_descriptor, uint8_t *data,  uint8_t length)
+
+void VITA_WRITE_REQUEST_ADDRESS(uint32_t file_descriptor, uint8_t *data,  uint8_t length,uint8_t *ADDRESS){
+
+
+bool check_for_ble_status_flag(){
+
+uint32_t update_status(uint32_t value){
+static uint32_t l2cap_le_att_connect(bdaddr_t *src, bdaddr_t *dst,
+                                     uint8_t dst_type, uint32_t sec)
+
+void *read_data(void *address_original)
+
+void init (uint8_t* address)
+
+void mtu_request(uint32_t fd){
+
+
+void enable_notification(uint32_t fd){
+
+void add_to_ble_structure(uint32_t FD, uint8_t * ADDRESS)
+
+uint32_t CONNECT_IOT_DM(uint8_t* dst_address){
+
+
+

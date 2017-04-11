@@ -31,15 +31,15 @@ Command for discover:
 {"Cmd":"Discover","ScanType":"Manual","DeviceType":"iotdevice"}
 
 
-
-{"Cmd":"iotvity_Get","ScanType":"Manual","Handle":"0x7fb3a8000e50"};
+GET:
+{"Cmd":"iotvity_Get","ScanType":"Manual","Handle":"0x7efc78000bd0"};
 {"Cmd":"iotvity_Get","ScanType":"Manual","Handle":"0x7fac58000b90"};
 
 
 PUT :
 IR Temperature Data
-{"Cmd":"iotvity_Put","Data":{ "name": "John's light","power":20,"state":false},"Handle":"0x7fe388000ef0"};
-{"Cmd":"iotvity_Put","Data":{ "IR Temperature Data": 90},"Handle":"0x7fb3a8000e50"};
+{"Cmd":"iotvity_Put","Data":{ "name": "John's light","power":20,"state":false},"Handle":"0x7fa6ac000bd0"};
+{"Cmd":"iotvity_Put","Data":{ "IR Temperature Data": 90},"Handle":"0x7efc780009f0"};
 
 Observe :
 {"Cmd":"iotvity_Observe","ScanType":"Manual","Handle":"0x7fd778000b90"};
@@ -52,11 +52,17 @@ sensor tag Mac Address:
 
 
 /home/pujalash/ashok434/git/dm
+
 export LD_LIBRARY_PATH=VITA_DM/Executables/lib/:VITA_DM/DM_IoTvity/:VITA_DM/DM_IoTvity/iotivity-1.2.1/out/linux/x86_64/release
+
+export LD_LIBRARY_PATH=VITA_DM/Executables/lib/:VITA_DM/DM_IoTvity/:VITA_DM/DM_IoTvity/iotivity-1.2.1/out/linux/arm/release
 
 export LD_LIBRARY_PATH=/home/pujalash/ashok434/git/dm/VITA/VITA_DM/DM_IoTvity:/home/pujalash/ashok434/git/dm/VITA/VITA_DM/Executables/lib:/home/pujalash/ashok434/git/dm/VITA/VITA_DM/DM_IoTvity/iotivity-1.2.1/out/linux/x86_64/release:/home/pujalash/ashok434/git/dm/VITA/VITA_DM/DM_IoTvity
 
 
 export LD_LIBRARY_PATH=home/lachaash/ganesh/VITA/VITA_DM/DM_IoTvity:/home/lachaash/ganesh/VITA/VITA_DM/Executables/lib:/home/lachaash/ganesh/VITA/VITA_DM/DM_IoTvity/iotivity-1.2.1/out/linux/x86_64/release:/home/lachaash/ganesh/VITA/VITA_DM/DM_IoTvity
+
+
+git clone https://github.com/01org/tinycbor.git extlibs/tinycbor/tinycbor -b v0.4
 
 
