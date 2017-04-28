@@ -1,0 +1,152 @@
+pujalash@VTLW018:~/RAMYAIP/iotivity-1.2.1$ out/linux/x86_64/release/resource/examples/simpleserver
+
+Usage : simpleserver <value>
+    Default - Non-secure resource and notify all observers
+    1 - Non-secure resource and notify list of observers
+
+    2 - Secure resource and notify all observers
+    3 - Secure resource and notify list of observers
+
+    4 - Non-secure resource, GET slow response, notify all observers
+Starting server & setting platform info
+Created resource.
+Added Interface and Type
+Waiting
+0: 
+In entity handler wrapper: 
+
+	In Server CPP entity handler:
+		requestFlag : Request
+			requestType : GET
+0: 
+In entity handler wrapper: 
+
+	In Server CPP entity handler:
+		requestFlag : Request
+			requestType : PUT
+				state: 1
+				power: 15
+0: 
+In entity handler wrapper: 
+
+	In Server CPP entity handler:
+		requestFlag : Request
+			requestType : POST
+0: 
+In entity handler wrapper: 
+
+	In Server CPP entity handler:
+		requestFlag : Request
+			requestType : POST
+				state: 1
+				power: 55
+0: 
+In entity handler wrapper: 
+
+	In Server CPP entity handler:
+		requestFlag : Request
+			requestType : GET
+		requestFlag : Observer
+
+Power updated to : 65
+Notifying observers with resource handle: 0x15ca500
+0: 
+In entity handler wrapper: 
+
+	In Server CPP entity handler:
+		requestFlag : Request
+			requestType : GET
+
+Power updated to : 75
+Notifying observers with resource handle: 0x15ca500
+0: 
+In entity handler wrapper: 
+
+	In Server CPP entity handler:
+		requestFlag : Request
+			requestType : GET
+
+Power updated to : 85
+Notifying observers with resource handle: 0x15ca500
+0: 
+In entity handler wrapper: 
+
+	In Server CPP entity handler:
+		requestFlag : Request
+			requestType : GET
+
+Power updated to : 95
+Notifying observers with resource handle: 0x15ca500
+0: 
+In entity handler wrapper: 
+
+	In Server CPP entity handler:
+		requestFlag : Request
+			requestType : GET
+
+Power updated to : 105
+Notifying observers with resource handle: 0x15ca500
+0: 
+In entity handler wrapper: 
+
+	In Server CPP entity handler:
+		requestFlag : Request
+			requestType : GET
+
+Power updated to : 115
+Notifying observers with resource handle: 0x15ca500
+0: 
+In entity handler wrapper: 
+
+	In Server CPP entity handler:
+		requestFlag : Request
+			requestType : GET
+
+Power updated to : 125
+Notifying observers with resource handle: 0x15ca500
+0: 
+In entity handler wrapper: 
+
+	In Server CPP entity handler:
+		requestFlag : Request
+			requestType : GET
+
+Power updated to : 135
+Notifying observers with resource handle: 0x15ca500
+0: 
+In entity handler wrapper: 
+
+	In Server CPP entity handler:
+		requestFlag : Request
+			requestType : GET
+
+Power updated to : 145
+Notifying observers with resource handle: 0x15ca500
+0: 
+In entity handler wrapper: 
+
+	In Server CPP entity handler:
+		requestFlag : Request
+			requestType : GET
+
+Power updated to : 155
+Notifying observers with resource handle: 0x15ca500
+0: 
+In entity handler wrapper: 
+
+	In Server CPP entity handler:
+		requestFlag : Request
+			requestType : GET
+0: 
+In entity handler wrapper: 
+
+	In Server CPP entity handler:
+		requestFlag : Request
+			requestType : GET
+		requestFlag : Observer
+
+Power updated to : 165
+Notifying observers with resource handle: 0x15ca500
+No More observers, stopping notifications
+
+

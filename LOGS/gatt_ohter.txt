@@ -22,9 +22,10 @@ our vitaDM
 Destination(topic):   ASHOK/Scan_Status
 
  Command for init:
-
 {"Cmd":"VITA_DM_Init","DeviceID":"B8:27:EB:39:1A:2F","DM_SL":{"SubModule : CM":{},"SubModule : DsM":{"BT_Params":["Name","DeviceID","Class_Name"],"WIFI_Params":["Name","DeviceID","Signal","Frequency"]},"SubModule : DeM":{},"RUN_IP":"192.168.4.19:8856"}}
 string : {"Cmd":"VITA_DM_Init","DeviceID":"B8:27:EB:39:1A:2F","DM_SL":{"SubModule : CM":{},"SubModule : DsM":{"BT_Params":["Name","DeviceID","Class_Name"],"WIFI_Params":["Name","DeviceID","Signal","Frequency"]},"SubModule : DeM":{},"RUN_IP":"192.168.4.19:8856"}}
+
+
 
 Command for discover:
 
@@ -32,18 +33,22 @@ Command for discover:
 
 
 GET:
-{"Cmd":"iotvity_Get","ScanType":"Manual","Handle":"0x70610640"};
+{"Cmd":"iotvity_Get","ScanType":"Manual","Handle":"0x7f17bc000d10"};
 {"Cmd":"iotvity_Get","ScanType":"Manual","Handle":"0x7fac58000b90"};
 
 
 PUT :
 IR Temperature Data
-{"Cmd":"iotvity_Put","Data":{ "name": "John's light","power":20,"state":false},"Handle":"0x7fa6ac000bd0"};
-{"Cmd":"iotvity_Put","Data":{ "IR Temperature Data": 90},"Handle":"0x70610640"};
+{"Cmd":"iotvity_Put","Data":{ "name": "John's light","power":20,"state":false},"Handle":"0x7fce78000b70"};
+{"Cmd":"iotvity_Put","Data":{ "IR Temperature Config": "1"},"Handle":"0x7f0424000c40"};
+{"Cmd":"iotvity_Put","Data":{ "Service Changed": "1"},"Handle":"0x7fa430000db0"};
 
 Observe :
-{"Cmd":"iotvity_Observe","ScanType":"Manual","Handle":"0x7fd778000b90"};
+{"Cmd":"iotvity_Observe","ScanType":"Manual","Handle":"0x7fc470000c70"};
 
+Terminate: DM_Terminate
+{"Cmd":"DM_Terminate"};
+{"Cmd":"DM_Terminate","ScanType":"Manual"};
 
 export LD_LIBRARY_PATH=VITA_DM/Executables/lib/:VITA_DM/DM_IoTvity/:VITA_DM/DM_IoTvity/iotivity-1.2.1/out/linux/x86_64/release
 

@@ -1,0 +1,198 @@
+Standard Coding Documentation checklist:
+(From Top to Down Approach)
+MAJOR THINGS TO APPROACH:(1)  No Tabs.
+			 (2)  Line Never Exceed 78 characters.
+			 (3)  Lower case names for files or Directories.
+			 (4)  Space after each comma ",".
+			 (5)  No space after opening paranthesis "(" and before closing paranthesis ")".
+			 (6)  Binary (ex: ==, +=) and Ternary (?:) operator are preceeded and followed by one space
+			 (7)  No space between Unary operators and their operands. Ex: !p, ~b, ++i, (void *)ptr, *p, &x, -k.
+			 (8)  Terminating semicolons should follow the instructions immediately with no space(s) before them Ex.strncat(t, s, n);
+			 (9)  No space around structure pointer operator(me->foo), structure member operator(s.foo), Array subscripting(a[j]), function 			      call like foo(x, y ,z)
+			 (10) The keywords if, while, for, switch, and return are followed by one (1) space.
+			 (11) Compound Expressions (allowed over paranthesizing, no dependecnce on precendence, every expression must be paranthesized)
+			 (12) Decorator | control statement must follow the identation style of K&R style
+			      Ex: <Decorator | control statement> {
+				  <statements...>
+				  <statements...>
+				  }
+			      Decorator | control statement can be any of the following.
+ 					(1) Function Declaration
+					(2) Structure | Class Declarator
+					(3) Enumeration
+					(4) Structure | Array Initializer
+					(5) Control Statements (if, while, for, switch, case, do) ===>Ex: while (condition) {
+													  . . . . . . .
+													  . . . . . . .
+													  }
+			 (13) Simplify Decorator | control statement expression like
+				Ex: if (format != 1
+					&& format1 != 2
+					&& version != 1) {
+				    . . .
+				    }
+			 (14) Never use "C" comments(/* .... */) in c
+			 (15) Never use "C++" comments(//) in c
+
+**************Commenting******************************************************
+
+Code implement Algorithm, Comments communicate code's operation to yourself
+Adequate comments allows system's operations without having to read the code itself.
+
+1. Elaborate High Level comments for Major components Modules, classes, imported API's.
+2. Brief, fine granularity comments explaining algorithmic details of performed operations
+3. References & Notes attached to code in the form of comments.
+
+**************************FILE IMPLEMENTATION**********************************
+
+1. Each module or file starts with a header comment in the following format:
+
+/*****************************************************************************
+* Product: . .
+* Version: . .
+* Updated: Dec 17 2004
+*
+* Copyright (C) 2002-2004 Quantum Leaps. All rights reserved.
+*
+* <licensing terms> (if any)
+*
+* <Company contact information>
+*****************************************************************************/
+
+
+2. Included Header Files with additional information in the comments.
+
+	#include "rtk.h"			/* Real-Time Kernel */
+	#include "qassert.h"			/* embedded-systems-friendly assertions */
+
+3. Definitions of public (global) variables should appear at the top of the module or file:
+
+	/* Public-scope objects ---------------------------------------------------*/
+	QActive *UI_Mgr;			/* pointer to the User Interface Manager active object */
+
+Warning:  
+(1) Global variables should be prefixed with the module name and an underscore (e.g., QK_readySet).
+(2) No identifier or variable name should be longer than 31 characters.
+(3) Avoid the use of "raw" C/C++ types, as these declarations vary depending on the machine. The recommended strategy is to always use a C-99 <stdint.h> header file [C99, Section 7.18]. In case this standard header file is not available (e.g., in a pre-standard compiler), you should create it and place in the compiler’s include directory. At a minimum, this file should contain the typedefs for the following exact-width integer data types.
+------------|--------------|-------------|
+exact size  |	 signed    |	unsigned |
+------------|--------------|-------------|
+8 bits      | 	 int8_t    |	uint8_t  |
+------------|--------------|-------------|
+16 bits     |	 int16_t   |	uint16_t |
+------------|--------------|-------------|
+32 bits     |  	 int32_t   | 	uint32_t |
+------------|--------------|-------------|
+(4) Type names (typedef, sturct and class) should start with an upper-case letter e.g., struct Foo. Optionally, the type name can be prefixed with the module identifier, e.g., typedef uint16_t QSignal, class QActive.
+(5) All other parts of identifiers composed form multiple words should be constructed with capitalizing letters at word boundaries like: fooBarTar, and not foo_bar_tar.
+
+4. The public (global) variables should be followed by all package-scope variables: "description is to Use any constant variables or global variable definitions".
+
+	/* Package-scope objects ---------------------------------------------------*/
+	QEvent const QEP_stdEvt[] = {
+	{ Q_EMPTY_SIG, 0},
+	{ Q_INIT_SIG, 0},
+	{ Q_ENTRY_SIG, 0},
+	{ Q_EXIT_SIG, 0}
+	};
+	. . .
+	. . .
+Warning:
+(1) Constants (numeric macros or enumerations) should be in upper-case with underscores "_" between each word or abbreviation (FOO_BAR). Global constants should be prefixed with the module name/identifier (Q_USER_SIG).
+
+5. The package-scope variables should be followed by local (module-scope) declarations and local variables
+(module-scope). All local-scope variables should be defined static.
+
+	/* Local-scope objects -----------------------------------------------------*/
+	static uint32_t l_svMask;		/* Space Vehicle mask indicating allocated SVs */
+	. . .
+Warning:
+(1) Local variables (visible within one module only) should start with “l_”, e.g., l_bitmask. All local
+variables should be declared static at the file scope.
+
+6. Implementation Section:
+
+  The implementation section contains function definitions (in C) or class method definitions (in C++).
+Regardless of language, keep functions small. The ideal size is less than a page; in no case should a
+function ever exceed two pages. Break large functions into several smaller ones.
+
+  	/***** Define a prototype for every function *****/
+
+	Define a prototype for every function, even the static helper functions called only from within their own
+module. (The good place for such static prototypes is the local-scope section.) Prototypes let the compiler
+catch the all-too-common errors of incorrect argument types and improper numbers of arguments. They
+are cheap insurance.
+
+  	/***** function names ******************************/
+		
+	Function names should follow the variable "naming conventions". Remember that
+functions are the “verbs” in programs - they do things. Incorporate the concept of “action words” into the
+variables’ names. For example, use “readAD” instead of “ADdata”.
+Warning:
+(1) Ordinary C functions and C++ class member functions start with a lower-case letters
+
+	 /****** Function Definition *************************/
+
+(1) Ordinary variables should start with a lower-case letter (foo).
+(2) All other parts of identifiers composed form multiple words should be constructed with capitalizing letters at word boundaries like: fooBarTar, 
+    and not foo_bar_tar.
+(3) the more broad the scope the more descriptive the name should be. For a very limited scope, it is recommended to use single letter identifiers. 
+    For example:
+	o i, j, k, m, n, for integers like loop counters
+	o p, q, r, s, t, u, v, w, for pointers or floating point numbers
+
+
+ 	/***** function comments ******************************/
+	Elaborate function comments (or class method comments in C++) should be placed in the header files,
+since the header files form the API documentation. These comments, generally, should not be repeated in
+the implementation section because this would create double points of maintenance. The comments at
+function definitions should rather refer to implementation details and revision history. At a minimum, the
+functions should be visually separated from each other.
+
+	/*..........................................................................*/
+	void swap(int *x, int *y) {
+	Q_REQUIRE((x != (int *)0) && (y != (int *)0));/* pointers must be valid */
+	int temp = *x;			/* store value of x in a temporary */
+	*x = *y;
+	*y = temp;
+	}
+	/*..........................................................................*/
+	int pow(int base, unsigned int exponent) {
+	int result = 1;
+	for (; exponent > 0; exponent >>= 1) {
+	if ((exponent & 1) != 0) {	/* exponent is odd? */
+		result *= base;
+	}
+	base *= base;
+	}
+		return result;
+	}	
+
+7. Notes Section:
+
+	The Notes Section is the ideal place for longer explanations that apply to multiple sections of code or
+would otherwise distract the reader when placed directly at the code. In the pertinent code you place just
+a reference to the Note:
+/*..........................................................................*/
+void interrupt dumpISR() {
+. . .			/* dump channel data to RAM, see NOTE03 */
+}
+
+
+
+At the end of the module, you place the Notes Section:
+/*****************************************************************************
+* . . .
+*
+* NOTE03:
+* this system has two hard real-time constraints:
+* #1 processing of channel DUMP data must complete before next DUMP
+* for the channel. This constraint is ensured in Assertion (NOTE03.1).
+*
+* #2 no accumulated data can be missed due to new DUMP for a channel
+* before the previous data has been read. This constraint is ensured
+* in Assertion (NOTE03.2).
+*
+*/
+
+
