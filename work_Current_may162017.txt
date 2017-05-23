@@ -1,0 +1,6 @@
+Synchronise at receciving data....,
+CASetPacketReceivedCallback()
+
+CAReceivedPacketCallback()
+
+Handlenon_iotvityCallback

@@ -1,0 +1,16 @@
+SCAN: Client enables scan from the following function through dbus call
+             CACentralStartDiscoveryImpl() in the file iotivity-1.2.1/resource/csdk/connectivity/src/bt_le_adapter/linux/central.c
+
+MULTICAST: Client enables multicast from the following function
+	    CASendMulticastData() in the file iotivity-1.2.1/resource/csdk/connectivity/src/bt_le_adapter/linux/peripheral.c
+
+
+ADVERTISE : Server enables advertise from the following function through dbus call
+	    CAPeripheralRegisterAdvertisements() in the iotivity-1.2.1/resource/csdk/connectivity/src/bt_le_adapter/linux/peripheral.c
+
+PROCESS MESSAGE : Server process data through the following function
+		CAReceivedPacketCallback() in the file iotivity-1.2.1/resource/csdk/connectivity/src/camessagehandler.c
+   
+UNICAST: Server enables unicast from the following function
+	    CASendUnicastData() in the file iotivity-1.2.1/resource/csdk/connectivity/src/cainterfacecontroller.c
+
