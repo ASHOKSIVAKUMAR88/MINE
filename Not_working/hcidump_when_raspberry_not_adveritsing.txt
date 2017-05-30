@@ -1,0 +1,184 @@
+pi@raspberrypi:~ $ sudo hcidump
+HCI sniffer - Bluetooth packet analyzer ver 5.23
+device: hci0 snap_len: 1500 filter: 0xffffffff
+< HCI Command: Reset (0x03|0x0003) plen 0
+> HCI Event: Command Complete (0x0e) plen 4
+    Reset (0x03|0x0003) ncmd 1
+    status 0x00
+< HCI Command: Read Local Supported Features (0x04|0x0003) plen 0
+> HCI Event: Command Complete (0x0e) plen 12
+    Read Local Supported Features (0x04|0x0003) ncmd 1
+    status 0x00
+    Features: 0xbf 0xfe 0xcf 0xfe 0xdb 0xff 0x7b 0x87
+< HCI Command: Read Local Version Information (0x04|0x0001) plen 0
+> HCI Event: Command Complete (0x0e) plen 12
+    Read Local Version Information (0x04|0x0001) ncmd 1
+    status 0x00
+    HCI Version: 4.1 (0x7) HCI Revision: 0xb6
+    LMP Version: 4.1 (0x7) LMP Subversion: 0x2209
+    Manufacturer: Broadcom Corporation (15)
+< HCI Command: Read BD ADDR (0x04|0x0009) plen 0
+> HCI Event: Command Complete (0x0e) plen 10
+    Read BD ADDR (0x04|0x0009) ncmd 1
+    status 0x00 bdaddr B8:27:EB:93:B0:85
+< HCI Command: Read Buffer Size (0x04|0x0005) plen 0
+> HCI Event: Command Complete (0x0e) plen 11
+    Read Buffer Size (0x04|0x0005) ncmd 1
+    status 0x00
+    ACL MTU 1021:8 SCO MTU 64:1
+< HCI Command: Read Class of Device (0x03|0x0023) plen 0
+> HCI Event: Command Complete (0x0e) plen 7
+    Read Class of Device (0x03|0x0023) ncmd 1
+    status 0x00 class 0x000000
+< HCI Command: Read Local Name (0x03|0x0014) plen 0
+> HCI Event: Command Complete (0x0e) plen 252
+    Read Local Name (0x03|0x0014) ncmd 1
+    status 0x00 name 'raspberrypi'
+< HCI Command: Read Voice Setting (0x03|0x0025) plen 0
+> HCI Event: Command Complete (0x0e) plen 6
+    Read Voice Setting (0x03|0x0025) ncmd 1
+    status 0x00 voice setting 0x0060
+< HCI Command: Read Number of Supported IAC (0x03|0x0038) plen 0
+> HCI Event: Command Complete (0x0e) plen 5
+    Read Number of Supported IAC (0x03|0x0038) ncmd 1
+< HCI Command: Read Current IAC LAP (0x03|0x0039) plen 0
+> HCI Event: Command Complete (0x0e) plen 8
+    Read Current IAC LAP (0x03|0x0039) ncmd 1
+    IAC 0x9e8b33 (General Inquiry Access Code)
+< HCI Command: Set Event Filter (0x03|0x0005) plen 1
+    type 0 condition 0
+    Clear all filters
+> HCI Event: Command Complete (0x0e) plen 4
+    Set Event Filter (0x03|0x0005) ncmd 1
+    status 0x00
+< HCI Command: Write Connection Accept Timeout (0x03|0x0016) plen 2
+    timeout 32000
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Connection Accept Timeout (0x03|0x0016) ncmd 1
+    status 0x00
+< HCI Command: LE Read Buffer Size (0x08|0x0002) plen 0
+> HCI Event: Command Complete (0x0e) plen 7
+    LE Read Buffer Size (0x08|0x0002) ncmd 1
+    status 0x00 pktlen 0x00fb maxpkt 0x08
+< HCI Command: LE Read Local Supported Features (0x08|0x0003) plen 0
+> HCI Event: Command Complete (0x0e) plen 12
+    LE Read Local Supported Features (0x08|0x0003) ncmd 1
+    status 0x00 features 0x1f00000000000000 (Link Layer supports LE Encryption)
+< HCI Command: LE Read Supported States (0x08|0x001c) plen 0
+> HCI Event: Command Complete (0x0e) plen 12
+    LE Read Supported States (0x08|0x001c) ncmd 1
+< HCI Command: Read Local Supported Commands (0x04|0x0002) plen 0
+> HCI Event: Command Complete (0x0e) plen 68
+    Read Local Supported Commands (0x04|0x0002) ncmd 1
+    status 0x00
+    Commands: ffffff03ccffefffffffec1ff20fe8fe3ff78fff1c00040061f7ffff7ff8ffff
+              ff3f
+< HCI Command: Write Simple Pairing Mode (0x03|0x0056) plen 1
+    mode 0x01
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Simple Pairing Mode (0x03|0x0056) ncmd 1
+    status 0x00
+< HCI Command: Write Inquiry Mode (0x03|0x0045) plen 1
+    mode 2
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Inquiry Mode (0x03|0x0045) ncmd 1
+    status 0x00
+< HCI Command: Read Inquiry Response Transmit Power Level (0x03|0x0058) plen 0
+> HCI Event: Command Complete (0x0e) plen 5
+    Read Inquiry Response Transmit Power Level (0x03|0x0058) ncmd 1
+    status 0x00 level 0
+< HCI Command: Read Local Extended Features (0x04|0x0004) plen 1
+    page 1
+> HCI Event: Command Complete (0x0e) plen 14
+    Read Local Extended Features (0x04|0x0004) ncmd 1
+    status 0x00 page 1 max 2
+    Features: 0x01 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+< HCI Command: Set Event Mask (0x03|0x0001) plen 8
+    Mask: 0xfffffbff07f8bf3d
+> HCI Event: Command Complete (0x0e) plen 4
+    Set Event Mask (0x03|0x0001) ncmd 1
+    status 0x00
+< HCI Command: Read Stored Link Key (0x03|0x000d) plen 7
+    bdaddr 00:00:00:00:00:00 all 1
+> HCI Event: Command Complete (0x0e) plen 8
+    Read Stored Link Key (0x03|0x000d) ncmd 1
+    status 0x00 max 1 num 0
+< HCI Command: Write Default Link Policy Settings (0x02|0x000f) plen 2
+    policy 0x05
+    Link policy: RSWITCH SNIFF 
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Default Link Policy Settings (0x02|0x000f) ncmd 1
+    status 0x00
+< HCI Command: Read Page Scan Activity (0x03|0x001b) plen 0
+> HCI Event: Command Complete (0x0e) plen 8
+    Read Page Scan Activity (0x03|0x001b) ncmd 1
+    status 0x00 interval 2048 window 18
+< HCI Command: Read Page Scan Type (0x03|0x0046) plen 0
+> HCI Event: Command Complete (0x0e) plen 5
+    Read Page Scan Type (0x03|0x0046) ncmd 1
+< HCI Command: LE Set Event Mask (0x08|0x0001) plen 8
+    mask 0x3f00000000000000 (Reserved)
+> HCI Event: Command Complete (0x0e) plen 4
+    LE Set Event Mask (0x08|0x0001) ncmd 1
+    status 0x00
+< HCI Command: LE Read Advertising Channel Tx Power (0x08|0x0007) plen 0
+> HCI Event: Command Complete (0x0e) plen 5
+    LE Read Advertising Channel Tx Power (0x08|0x0007) ncmd 1
+    status 0x00 level 0xc (dBm)
+< HCI Command: LE Read White List Size (0x08|0x000f) plen 0
+> HCI Event: Command Complete (0x0e) plen 5
+    LE Read White List Size (0x08|0x000f) ncmd 1
+< HCI Command: LE Clear White List (0x08|0x0010) plen 0
+> HCI Event: Command Complete (0x0e) plen 4
+    LE Clear White List (0x08|0x0010) ncmd 1
+    status 0x00
+< HCI Command: Write LE Host Supported (0x03|0x006d) plen 2
+> HCI Event: Command Complete (0x0e) plen 4
+    Write LE Host Supported (0x03|0x006d) ncmd 1
+< HCI Command: Read Local Extended Features (0x04|0x0004) plen 1
+    page 2
+> HCI Event: Command Complete (0x0e) plen 14
+    Read Local Extended Features (0x04|0x0004) ncmd 1
+    status 0x00 page 2 max 2
+    Features: 0x13 0x03 0x00 0x00 0x00 0x00 0x00 0x00
+< HCI Command: Delete Stored Link Key (0x03|0x0012) plen 7
+    bdaddr 00:00:00:00:00:00 all 1
+> HCI Event: Command Complete (0x0e) plen 6
+    Delete Stored Link Key (0x03|0x0012) ncmd 1
+    status 0x00 deleted 0
+< HCI Command: Set Event Mask Page 2 (0x03|0x0063) plen 8
+    Mask: 0x00c0bf0000000000
+> HCI Event: Command Complete (0x0e) plen 4
+    Set Event Mask Page 2 (0x03|0x0063) ncmd 1
+    status 0x00
+< HCI Command: Unknown (0x04|0x000b) plen 0
+> HCI Event: Command Complete (0x0e) plen 12
+    Unknown (0x04|0x000b) ncmd 1
+< HCI Command: Unknown (0x05|0x000c) plen 0
+> HCI Event: Command Complete (0x0e) plen 15
+    Unknown (0x05|0x000c) ncmd 1
+< HCI Command: Unknown (0x03|0x007a) plen 1
+> HCI Event: Command Complete (0x0e) plen 4
+    Unknown (0x03|0x007a) ncmd 1
+< HCI Command: LE Set Advertising Data (0x08|0x0008) plen 32
+> HCI Event: Command Complete (0x0e) plen 4
+    LE Set Advertising Data (0x08|0x0008) ncmd 1
+    status 0x00
+< HCI Command: LE Set Scan Response Data (0x08|0x0009) plen 32
+> HCI Event: Command Complete (0x0e) plen 4
+    LE Set Scan Response Data (0x08|0x0009) ncmd 1
+    status 0x00
+< HCI Command: Write Local Name (0x03|0x0013) plen 248
+    name 'raspberrypi'
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Local Name (0x03|0x0013) ncmd 1
+    status 0x00
+< HCI Command: Write Extended Inquiry Response (0x03|0x0052) plen 241
+    fec 0x00
+    Complete local name: 'raspberrypi'
+    TX power level: 0
+    Unknown type 0x10 with 8 bytes data
+    Complete service classes: 0x1800 0x1801 0x110e 0x110c
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+    status 0x00

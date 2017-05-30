@@ -1,0 +1,76 @@
+ HCI Command: LE Set Advertise Enable (0x08|0x000a) plen 1
+> HCI Event: Command Complete (0x0e) plen 4
+    LE Set Advertise Enable (0x08|0x000a) ncmd 1
+    status 0x00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+> HCI Event: LE Meta Event (0x3e) plen 19
+    LE Connection Complete
+      status 0x00 handle 64, role slave
+      bdaddr 00:1A:7D:DA:71:13 (Public)
+< HCI Command: LE Read Remote Used Features (0x08|0x0016) plen 2
+> HCI Event: Command Status (0x0f) plen 4
+    LE Read Remote Used Features (0x08|0x0016) status 0x00 ncmd 1
+> HCI Event: LE Meta Event (0x3e) plen 12
+    LE Read Remote Used Features Complete
+      status 0x1a handle 64
+      Error: Unsupported Remote Feature / Unsupported LMP Feature
+< ACL data: handle 64 flags 0x00 dlen 7
+    ATT: MTU req (0x02)
+      client rx mtu 517
+> ACL data: handle 64 flags 0x02 dlen 7
+    ATT: MTU req (0x02)
+      client rx mtu 256
+< ACL data: handle 64 flags 0x00 dlen 7
+    ATT: MTU resp (0x03)
+      server rx mtu 517
+> HCI Event: Number of Completed Packets (0x13) plen 5
+    handle 64 packets 2
+> ACL data: handle 64 flags 0x02 dlen 9
+    ATT: Write req (0x12)
+      handle 0x0010 value  0x01 0x00
+< ACL data: handle 64 flags 0x00 dlen 5
+    ATT: Write resp (0x13)
+> HCI Event: Number of Completed Packets (0x13) plen 5
+    handle 64 packets 1
+
+
+
+
+
+
+
+> HCI Event: Disconn Complete (0x05) plen 4
+    status 0x00 handle 64 reason 0x13
+    Reason: Remote User Terminated Connection
+< HCI Command: LE Set Advertising Parameters (0x08|0x0006) plen 15
+    min 1280.000ms, max 1280.000ms
+    type 0x00 (ADV_IND - Connectable undirected advertising) ownbdaddr 0x00 (Public)
+    directbdaddr 0x00 (Public) 00:00:00:00:00:00
+    channelmap 0x07 filterpolicy 0x00 (Allow scan from any, connection from any)
+> HCI Event: Command Complete (0x0e) plen 4
+    LE Set Advertising Parameters (0x08|0x0006) ncmd 1
+    status 0x00
+< HCI Command: LE Set Advertise Enable (0x08|0x000a) plen 1
+> HCI Event: Command Complete (0x0e) plen 4
+    LE Set Advertise Enable (0x08|0x000a) ncmd 1
+    status 0x00
+
+
