@@ -1,0 +1,11 @@
+Username for 'https://github.com': ashoksivakumar.pujala@yahoo.com
+Password for 'https://ashoksivakumar.pujala@yahoo.com@github.com': 
+Counting objects: 27, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (27/27), done.
+Writing objects: 100% (27/27), 166.15 KiB | 0 bytes/s, done.
+Total 27 (delta 10), reused 0 (delta 0)
+remote: Resolving deltas: 100% (10/10), completed with 7 local objects.
+To https://github.com/ASHOKSIVAKUMAR88/MINE.git
+   4bb4584..05b41e5  master -> master
+

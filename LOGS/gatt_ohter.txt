@@ -34,18 +34,21 @@ Command for discover:
 
 
 GET:
-{"Cmd":"iotvity_Get","ScanType":"Manual","Handle":"0x7f39300008f0"};
+{"Cmd":"iotvity_Get","ScanType":"Manual","Handle":"0x7fb2e0000a20"};
 {"Cmd":"iotvity_Get","ScanType":"Manual","Handle":"0x7fac58000b90"};
 
 
 PUT :
 IR Temperature Data
-{"Cmd":"iotvity_Put","Data":{"power":45000},"Handle":"0x7f39300008f0"};
+{"Cmd":"iotvity_Put","Data":{"power":8800},"Handle":"0x7fb2e0000a20"};
 {"Cmd":"iotvity_Put","Data":{ "IR Temperature Config": "1"},"Handle":"0x7f0424000c40"};
 {"Cmd":"iotvity_Put","Data":{ "Service Changed": "1"},"Handle":"0x7fa430000db0"};
 
 Observe :
-{"Cmd":"iotvity_Observe","ScanType":"Manual","Handle":"0x7fc470000c70"};
+{"Cmd":"iotvity_Observe","ScanType":"Manual","Handle":"0x7ff268000a20"};
+cancel_Observe:
+{"Cmd":"cancel_Observe","ScanType":"Manual","Handle":"0x7ff268000a20"};
+
 
 Terminate: DM_Terminate
 {"Cmd":"DM_Terminate"};
