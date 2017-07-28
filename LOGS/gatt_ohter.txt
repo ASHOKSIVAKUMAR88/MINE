@@ -34,13 +34,13 @@ Command for discover:
 
 
 GET:
-{"Cmd":"iotvity_Get","ScanType":"Manual","Handle":"0x7fb2e0000a20"};
+{"Cmd":"iotvity_Get","ScanType":"Manual","Handle":"0x7f95a00008f0"};
 {"Cmd":"iotvity_Get","ScanType":"Manual","Handle":"0x7fac58000b90"};
 
 
 PUT :
 IR Temperature Data
-{"Cmd":"iotvity_Put","Data":{"power":8800},"Handle":"0x7fb2e0000a20"};
+{"Cmd":"iotvity_Put","Data":{"power":80000},"Handle":"0x7f95a00008f0"};
 {"Cmd":"iotvity_Put","Data":{ "IR Temperature Config": "1"},"Handle":"0x7f0424000c40"};
 {"Cmd":"iotvity_Put","Data":{ "Service Changed": "1"},"Handle":"0x7fa430000db0"};
 
